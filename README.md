@@ -219,9 +219,9 @@ Checked items are complete. The full text is available in [Markdown](text/shahna
 </details>
 
 <details>
-<summary>○ 08 · منوچهر (0/32 sections)</summary>
+<summary>○ 08 · منوچهر (1/32 sections)</summary>
 
-- [ ] 08.01 · پادشاهی منوچهر
+- [x] [08.01 · پادشاهی منوچهر](src/content/sections/08-01.ts)
 - [ ] 09.01 · داستان زال و رودابه
 - [ ] 09.02 · پناه دادن سیمرغ، زال را
 - [ ] 09.03 · آگاه شدن سام نریمان، از زال
