@@ -48,7 +48,7 @@ jobs:
           HEAD_SHA: ${{ github.sha }}
       - name: Preserve review evidence
         if: always()
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: section-checks
           path: |
@@ -58,7 +58,7 @@ jobs:
           retention-days: 7
       - name: Package the production build
         if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'farzinnasiri/visual-shahnameh' && github.actor == 'farzinnasiri'
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: cloudflare-build
           path: .cloudflare/output/v0/
