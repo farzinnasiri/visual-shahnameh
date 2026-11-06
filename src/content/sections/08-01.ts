@@ -107,14 +107,14 @@ export const section: Section = {
       couplets: [25, 26, 27, 28],
     },
     {
-      image: art("07-sam"),
+      image: art("07-sam-2"),
       sound: {"like": "contemplative", "brightness": 0.46, "cues": [{"couplet": 29, "sound": "horn"}]},
       focus: [0.504, 0.543],
       alt: "سام با ریش سیاه دوشاخه، زره سیمین و ردای بنفش در برابر منوچهر به سخن ایستاده است",
       couplets: [29, 30, 31, 32, 33],
     },
     {
-      image: art("08-aram-razm"),
+      image: art("08-aram-razm-2"),
       sound: {"like": "court", "brightness": 0.48},
       focus: [0.503, 0.543],
       alt: "سام راه دور را نشان می‌دهد و از منوچهر می‌خواهد بر تخت بیاساید",

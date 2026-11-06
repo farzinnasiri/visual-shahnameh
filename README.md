@@ -128,9 +128,9 @@ The `work/claims/` locks still coordinate agents sharing one checkout.
 ## Chapter checklist
 
 As of 2026-11-06, chapters 01–07 are complete through **07.18, درگذشتن فریدون**.
-The app includes **39 of 645 sections** and **1,941 couplets**, with paintings
+The app includes **40 of 645 sections** and **1,983 couplets**, with paintings
 and generative music.
-Next: **08.01, پادشاهی منوچهر**. Unchecked chapters remain to be illustrated and scored.
+Next: **09.01, داستان زال و رودابه**. Unchecked chapters remain to be illustrated and scored.
 
 Open any of the 61 chapters below to see its subsections.[^chapters]
 Checked items are complete. The full text is available in [Markdown](text/shahnameh.md),
