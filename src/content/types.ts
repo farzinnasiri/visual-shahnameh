@@ -52,6 +52,14 @@ export interface Section {
   /** scenes[0] is the threshold shown with the title; it has no couplets. */
   scenes: readonly Scene[];
   /**
+   * Portrait reading composition. Defaults to "stacked" on viewports at most
+   * 760px wide whose height exceeds their width: whole painting above the
+   * measured verse panel, over a full-bleed atmospheric backdrop.
+   * "immersive" retains the full-cover camera and verse overlay. Desktop and
+   * landscape layouts are unaffected. Scene.focus remains the light target.
+   */
+  portraitLayout?: "stacked" | "immersive";
+  /**
    * Optional gold-on-black layer the camera flies through between scenes,
    * composited with mix-blend-mode: screen.
    */

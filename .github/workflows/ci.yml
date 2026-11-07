@@ -32,9 +32,11 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm audit --audit-level=low
       - run: pnpm check:chapters
+      - run: pnpm test:portrait:geometry
       - run: pnpm build
       - name: Use the runner's installed Chrome
         run: echo "CHROMIUM_EXECUTABLE_PATH=$(command -v google-chrome)" >> "$GITHUB_ENV"
+      - run: pnpm test:portrait:browser
       - name: Install the audio checker
         timeout-minutes: 6
         run: |
@@ -59,6 +61,7 @@ jobs:
           path: |
             work/checks/**/result.json
             work/checks/**/sheet-*.jpg
+            work/portrait-reader/**
           if-no-files-found: warn
           retention-days: 7
       - name: Package the production build

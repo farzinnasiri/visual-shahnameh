@@ -386,6 +386,11 @@ stagger or timed redirects. Existing content and paintings remain unchanged.
 
 ### Central reading column
 
+Portrait stacked verses use the available width with 1.5rem side insets and
+the `--portrait-verse-size` token, which responds to both viewport width and
+height with a 1.125rem floor. Apply this typography before measuring each
+scene's tallest wrapped couplet; short phones must retain room for the art.
+
 Farzin's direction on 2026-11-05 is the governing layout rule: keep the eye in
 the middle third of a desktop screen. All headings, contents, chapter lists,
 poems and controls share `--book-width`, approximately 34vw capped at 38rem.
@@ -394,3 +399,41 @@ Both hemistichs stack above and below the lower reading anchor on every screen s
 navigation is centred above; reading controls and sound are centred below.
 Contents uses two arches per row inside this column, not a shelf across the
 whole screen. A chapter's compact introduction stays above its section list.
+
+### Portrait painting and verse composition
+
+On portrait viewports at most 760px wide, sections default to a stacked
+reading composition. A quiet, soft full-bleed rendering of the current
+painting remains behind the stage. The complete 3:2 painting is fitted,
+without stretching or an ornamental frame, into the upper available region;
+the measured verse panel occupies a separate lower region. Principal details
+must not depend on fitting inside the narrow slice of a full-height cover
+image or on remaining visible through an opaque verse card.
+
+The top navigation and lower reading controls define the available vertical
+space. The tallest measured pair of hemistichs in each scene determines one
+stable panel height, including its asymmetric above/below extents and padding.
+The painting uses the remaining space above that panel with a clear gap.
+There is no minimum art height that can force an overlap with text or controls.
+If enlarged text cannot fit between navigation and controls, the couplet
+becomes a naturally scrolling card inside that available region. Navigation
+stays outside the card; overflow never silently falls back to an obstructed
+stacked frame.
+
+`Section.portraitLayout` can explicitly retain `"immersive"` for a section;
+`"stacked"` is the default. Desktop, landscape and the threshold retain
+their immersive presentation; the final portrait painting remains beneath
+the ending veil and colophon. Existing scene images, couplet timing and sound
+are unchanged, and `Scene.focus` continues to identify the luminous dive target,
+not a character or a substitute composition anchor.
+
+Ordinary portrait reading keeps the whole-image frame bounded; it does not
+morph into full-height cover or keep zooming until essential details leave
+the frame. Eight pixels of inner art space protect the fitted image from the
+region's edges. During a portrait dive, the outgoing image zooms around its
+actual painted light while the verse fades; the portal, rim and glow originate
+at that framed light. The incoming painting's light initially aligns with the
+portal and settles into its natural fitted frame by the first verse hold.
+The full-bleed backdrop prevents empty stage edges. The reduced-motion
+presentation retains a static fit and uses a quiet crossfade instead of a
+spatial zoom or camera flight. Desktop dive geometry is unchanged.

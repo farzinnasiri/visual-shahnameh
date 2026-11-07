@@ -54,9 +54,11 @@ section end to end: `src/content/sections/02-01.ts` with
    and retry with your own Codex setup. Keep account identifiers private.
 7. **Review every image yourself** against `art/STYLE.md`: no text or
    letters, no frame, one luminous focal point near the centre, key content
-   in the central 45%, miniature style at night, characters matching their
+   composed in the central 45%, miniature style at night, characters matching their
    sheets, no anachronisms, no depiction of God, the Prophet or the Imams.
    Redo any that fail; a redo gets a new file name.
+   The 45% rule is composition guidance, not a promise that an immersive
+   camera or a dive will preserve that area at every viewport and zoom.
 8. **Convert:**
    `pnpm art:convert art/incoming/<slug> public/art/<slug> --delete-source`
    (AVIF, about 0.5 MB each; the PNGs are deleted, which is intended).
@@ -65,11 +67,23 @@ section end to end: `src/content/sections/02-01.ts` with
    `const art = sectionArt("<id>")`, verbatim couplets, scenes with Persian
    `alt`, `focus` for any painting whose light isn't centred, and a `sound`
    for every scene (`sound/SOUND.md`; cues on the couplets the text names).
-   No `next` field: links are automatic.
+   Keep `focus` on the actual painted light, not on a face or an empty point.
+   Portrait reading defaults to the whole painting above a separate measured
+   verse region, with a soft full-bleed backdrop. `portraitLayout: "immersive"`
+   explicitly retains the cover/overlay presentation; it needs its own viewport
+   review. No `next` field: links are automatic.
 10. **Check:** `node scripts/check_section.mjs <id>` until it prints ✓. Then
     open `work/checks/<id>/sheet-desktop.jpg` and `sheet-phone.jpg` and
     look: every couplet readable, dives opening onto light, no exposed
     edges, characters consistent. Fix what you see and re-run.
+    Before expanding a multi-section illustration batch, use a representative
+    completed section as an early reader preview: inspect the first and last
+    verse of each representative scene and its dive at 320×568, 390×844 and a
+    desktop size. Use real converted paintings and complete reader content,
+    not placeholders. Check that ordinary portrait reading keeps the whole
+    painting separate from the verse card, including wrapped text; inspect
+    the light transition separately. Deliberate transition cropping is not a
+    requirement that every face remain visible during every verse.
 11. **Write `reports/<slug>.md`** (template below). This file is how your
     work is evaluated; the check fails without it.
 

@@ -6,6 +6,7 @@ import { icon, navigation } from "./navigation";
 import { Sound } from "./sound";
 import { SoundToggle } from "./sound-toggle";
 import { saveProgress } from "./reading-progress";
+import { computePortraitLayout } from "./portrait-layout";
 import { BEATS, buildTimeline, type Timeline } from "./timeline";
 import {
   clamp,
@@ -31,6 +32,7 @@ interface SceneNode {
   img: HTMLImageElement;
   requested: boolean;
   ready: boolean;
+  backdrop?: HTMLCanvasElement;
 }
 
 interface CoupletNode {
@@ -87,6 +89,7 @@ export class Journey {
   private lastReadingScene = -1;
   private readingCenters: number[] = [];
   private readingPanelCenters: number[] = [];
+  private portraitLayouts: ReturnType<typeof computePortraitLayout>[] = [];
   private verses!: HTMLDivElement;
   private lastCheckpointAt = -Infinity;
   private lastCheckpoint = "";
@@ -345,6 +348,11 @@ export class Journey {
   private layout() {
     this.vw = window.innerWidth;
     this.vh = window.innerHeight;
+    // An old scrolling-card layout must not influence new line measurements.
+    this.verses.classList.remove("portrait-overflow");
+    this.verses.removeAttribute("data-native-scroll");
+    // Apply portrait typography before measuring wrapped hemistichs.
+    this.verses.classList.toggle("portrait-reading", this.vw <= 760 && this.vh > this.vw && this.section.portraitLayout !== "immersive");
     const coverW = Math.max(this.vw, this.vh * PAINTING_ASPECT);
     this.paintW = coverW * OVERSCAN;
     this.paintH = (coverW / PAINTING_ASPECT) * OVERSCAN;
@@ -352,6 +360,7 @@ export class Journey {
     this.pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
     this.world.width = Math.round(this.vw * this.pixelRatio);
     this.world.height = Math.round(this.vh * this.pixelRatio);
+    for (const scene of this.scenes) scene.backdrop = undefined;
     if (this.light) {
       this.light.style.width = `${this.paintW}px`;
       this.light.style.height = `${this.paintH}px`;
@@ -373,7 +382,14 @@ export class Journey {
     this.readingHeights = extents.map(([above, below]) => above + below + padding * 2);
     const top = this.hud.getBoundingClientRect().bottom + 20;
     const bottom = this.previousButton.parentElement!.getBoundingClientRect().top - 20;
-    this.readingCenters = extents.map(([above, below]) => clamp(this.vh * .6, top + above + padding, bottom - below - padding));
+    this.portraitLayouts = extents.map(([above, below]) => computePortraitLayout({
+      width: this.vw, height: this.vh, hudBottom: top - 20, controlsTop: bottom + 20,
+      above, below, padding, mode: this.section.portraitLayout,
+    }));
+    this.readingCenters = extents.map(([above, below], i) => {
+      const portrait = this.portraitLayouts[i];
+      return portrait?.fits ? portrait.readingAnchor : clamp(this.vh * .6, top + above + padding, bottom - below - padding);
+    });
     this.readingPanelCenters = extents.map(([above, below], i) => this.readingCenters[i] + (below - above) / 2);
     this.lastReadingScene = -1;
   }
@@ -406,7 +422,19 @@ export class Journey {
 
   private render(dt: number, time: number) {
     const { u, timeline, vw, vh } = this;
-    const radiusMax = Math.hypot(vw, vh) / 2 + 40;
+    const entering = timeline.scenes.findIndex((span, i) => i > 0 && u >= span.diveStart && u < span.revealed);
+    const started = timeline.scenes.reduce((last, span, i) => u >= span.diveStart ? i : last, 0);
+    const portalScene = entering > 0 ? entering - 1 : Math.max(0, started);
+    let portal = this.portraitFocus(portalScene);
+    if (entering < 0 && started > 0 && !this.reduced) {
+      const span = timeline.scenes[started];
+      const settle = smoothstep(span.revealed, span.revealed + 0.3, u);
+      const previous = this.portraitFocus(started - 1);
+      portal = [lerp(previous[0], portal[0], settle), lerp(previous[1], portal[1], settle)];
+    }
+    const radiusMax = Math.max(...[0, vw].flatMap(x => [0, vh].map(y => Math.hypot(x - portal[0], y - portal[1])))) + 40;
+    this.stage.style.setProperty("--portal-x", `${portal[0]}px`);
+    this.stage.style.setProperty("--portal-y", `${portal[1]}px`);
     const push = this.reduced ? 0 : PUSH_IN;
     // Backdrop snapshots must not sample a changing portal mask. Keep the
     // opaque reading fallback until the incoming painting is fully revealed.
@@ -472,10 +500,31 @@ export class Journey {
         ctx.globalAlpha = opacity;
         if (clipRadius !== null) {
           ctx.beginPath();
-          ctx.arc(vw / 2, vh / 2, clipRadius, 0, Math.PI * 2);
+          ctx.arc(portal[0], portal[1], clipRadius, 0, Math.PI * 2);
           ctx.clip();
         }
-        ctx.drawImage(node.img, (vw - w) / 2 + ox, (vh - h) / 2 + oy, w, h);
+        const portrait = this.portraitLayouts[i];
+        if (i > 0 && portrait?.fits) {
+          // A soft full-bleed atmosphere surrounds the complete illustration.
+          // Cache this layer so canvas blur does not run on every frame.
+          ctx.drawImage(this.portraitBackdrop(node), 0, 0, vw, vh);
+          ctx.globalAlpha = opacity;
+          const rect = portrait.artRect;
+          const zoom = this.reduced ? 1 : 1 + (isLast ? 1.1 : 1.8) * easeInCubic(tx);
+          // Preserve the whole composition while reading. Only the outgoing
+          // dive zooms, anchored on the actual painted light rather than a face.
+          const pw = rect.width * zoom;
+          const ph = rect.height * zoom;
+          const settle = this.reduced ? 1 : smoothstep(span.revealed, span.revealed + 0.3, u);
+          const naturalFocus = [rect.x + rect.width * fx, rect.y + rect.height * fy];
+          const incomingPortal = this.portraitFocus(i - 1);
+          const incomingX = (incomingPortal[0] - naturalFocus[0]) * (1 - settle);
+          const incomingY = (incomingPortal[1] - naturalFocus[1]) * (1 - settle);
+          ctx.drawImage(node.img, rect.x + (rect.width - pw) * fx + incomingX,
+            rect.y + (rect.height - ph) * fy + incomingY, pw, ph);
+        } else {
+          ctx.drawImage(node.img, (vw - w) / 2 + ox, (vh - h) / 2 + oy, w, h);
+        }
         ctx.restore();
       }
     });
@@ -483,6 +532,16 @@ export class Journey {
     this.loadAround(current);
     if (current !== this.lastReadingScene) {
       this.lastReadingScene = current;
+      const portrait = this.portraitLayouts[current];
+      const overflow = portrait !== null && portrait !== undefined && !portrait.fits;
+      this.verses.classList.toggle("portrait-overflow", overflow);
+      this.verses.toggleAttribute("data-native-scroll", overflow);
+      this.verses.setAttribute("aria-hidden", overflow ? "false" : "true");
+      for (const couplet of this.couplets) couplet.root.tabIndex = overflow ? 0 : -1;
+      if (overflow) {
+        this.verses.style.setProperty("--overflow-top", `${portrait.availableTop}px`);
+        this.verses.style.setProperty("--overflow-bottom", `${vh - portrait.availableBottom}px`);
+      }
       this.bed.style.height = `${this.readingHeights[current] || 0}px`;
       this.verses.style.setProperty("--reading-center", `${this.readingCenters[current]}px`);
       this.verses.style.setProperty("--reading-panel-center", `${this.readingPanelCenters[current]}px`);
@@ -536,8 +595,10 @@ export class Journey {
       const appear = smoothstep(0, 0.24, t);
       const leave = 1 - smoothstep(0.76, 1, t);
       const presence = appear * leave;
-      if (this.reduced) {
+      if (this.reduced || this.verses.classList.contains("portrait-overflow")) {
         node.style.opacity = presence.toFixed(3);
+        node.style.transform = "none";
+        node.style.setProperty("--blur", "0px");
         return;
       }
       const scale =
@@ -575,7 +636,33 @@ export class Journey {
     }
     this.bar.style.transform = `scaleX(${(u / timeline.total).toFixed(4)})`;
 
-    this.dust?.frame(dt, this.speed, (0.55 + 0.45 * smoothstep(0, 1, u)) * (1 - closing), time);
+    this.dust?.frame(dt, this.speed, (0.55 + 0.45 * smoothstep(0, 1, u)) * (1 - closing), time, portal);
+  }
+
+  /** The portrait portal stays on the light within the fitted illustration. */
+  private portraitFocus(index: number): readonly [number, number] {
+    const portrait = this.portraitLayouts[index];
+    if (index === 0 || !portrait?.fits) return [this.vw / 2, this.vh / 2];
+    const [fx, fy] = this.section.scenes[index].focus ?? [0.5, 0.5];
+    const rect = portrait.artRect;
+    return [rect.x + rect.width * fx, rect.y + rect.height * fy];
+  }
+
+  private portraitBackdrop(node: SceneNode) {
+    if (node.backdrop) return node.backdrop;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(this.vw / 3);
+    canvas.height = Math.ceil(this.vh / 3);
+    const ctx = canvas.getContext("2d")!;
+    ctx.fillStyle = getComputedStyle(this.stage).getPropertyValue("--lajevard-1000").trim();
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    const width = Math.max(canvas.width, canvas.height * PAINTING_ASPECT) * 1.2;
+    const height = width / PAINTING_ASPECT;
+    ctx.filter = "blur(8px)";
+    ctx.globalAlpha = 0.4;
+    ctx.drawImage(node.img, (canvas.width - width) / 2, (canvas.height - height) / 2, width, height);
+    node.backdrop = canvas;
+    return canvas;
   }
 
   /** Request paintings near the reader: the current one, one behind, two ahead. */

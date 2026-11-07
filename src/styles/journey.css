@@ -66,8 +66,8 @@ html.journey::-webkit-scrollbar {
 /* Gold cloud band the camera flies through between scenes. */
 .light-layer {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: var(--portal-x, 50%);
+  top: var(--portal-y, 50%);
   mix-blend-mode: screen;
   pointer-events: none;
   opacity: 0;
@@ -83,8 +83,8 @@ html.journey::-webkit-scrollbar {
 /* Gold ring at the edge of the opening portal. */
 .rim {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: var(--portal-x, 50%);
+  top: var(--portal-y, 50%);
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -106,7 +106,7 @@ html.journey::-webkit-scrollbar {
   pointer-events: none;
   opacity: 0;
   mix-blend-mode: screen;
-  background: radial-gradient(closest-side at 50% 50%, rgb(255 246 216 / 0.85), rgb(226 192 108 / 0.35) 35%, transparent 75%);
+  background: radial-gradient(closest-side at var(--portal-x, 50%) var(--portal-y, 50%), rgb(255 246 216 / 0.85), rgb(226 192 108 / 0.35) 35%, transparent 75%);
 }
 
 .dust {
@@ -152,6 +152,13 @@ html.journey::-webkit-scrollbar {
 .verses { position: fixed; inset: 0; pointer-events: none; }
 .couplet { position: absolute; inset: 0; visibility: hidden; will-change: transform, opacity; }
 .couplet.is-visible { visibility: visible; }
+.portrait-reading .couplet { transform-origin: 50% var(--reading-panel-center, 60%); }
+.portrait-reading .hemistich { width: min(35rem, calc(100vw - 3rem)); font-size: var(--portrait-verse-size); }
+.portrait-reading .verse-bed { width: min(38rem, calc(100vw - 2rem)); }
+.portrait-overflow .couplet { inset: var(--overflow-top) 1rem var(--overflow-bottom); overflow-y: auto; overscroll-behavior: contain; pointer-events: auto; padding: var(--reading-padding); border-radius: 1rem; background: var(--reading-strip); }
+.portrait-overflow .hemistich { position: static; width: 100%; transform: none; margin: .5em 0; padding: 0; }
+.portrait-overflow .couplet__mark { position: static; display: block; margin: .5rem auto; translate: none; }
+.portrait-overflow .verse-bed { display: none; }
 .hemistich { position: absolute; left: 50%; width: min(calc(var(--book-width) - 3rem), calc(100vw - 5rem)); transform: translateX(-50%); margin: 0; padding: .5em 0; font-family: var(--font-verse); font-size: var(--verse-size); font-weight: 400; font-synthesis: none; line-height: 2.1; text-align: center; white-space: normal; text-wrap: balance; color: var(--verse-ink); filter: blur(var(--blur, 0px)); }
 .hemistich--first { bottom: calc(100% - var(--reading-center, 50%) + .9rem); margin-bottom: -.5em; }
 .hemistich--second { top: calc(var(--reading-center, 50%) + .9rem); margin-top: -.5em; }

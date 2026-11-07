@@ -125,7 +125,8 @@ export class Detents {
   }
 
   private onWheel = (e: WheelEvent) => {
-    if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+    if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY) ||
+      (e.target instanceof Element && e.target.closest("[data-native-scroll]"))) return;
     e.preventDefault();
     const now = performance.now();
     const vh = this.vh();
@@ -149,7 +150,7 @@ export class Detents {
   private onKey = (e: KeyboardEvent) => {
     if (e.altKey || e.ctrlKey || e.metaKey) return;
     const el = e.target;
-    if (el instanceof Element && (el.closest("input, textarea, select, [contenteditable]") ||
+    if (el instanceof Element && (el.closest("input, textarea, select, [contenteditable], [data-native-scroll]") ||
       ([" ", "Enter"].includes(e.key) && el.closest("button, a")))) return;
     if (this.target === null && !this.pendingSettle) this.pos = window.scrollY / this.vh();
     const here = this.target ?? this.pos;

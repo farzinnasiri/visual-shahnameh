@@ -51,7 +51,7 @@ export class Dust {
    * @param speed camera speed in beats per second (signed)
    * @param intensity 0..1 overall visibility
    */
-  frame(dt: number, speed: number, intensity: number, time: number) {
+  frame(dt: number, speed: number, intensity: number, time: number, origin?: readonly [number, number]) {
     const { ctx, w, h, dpr } = this;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, w, h);
@@ -59,6 +59,7 @@ export class Dust {
 
     const travel = (0.035 + Math.max(-2.5, Math.min(2.5, speed)) * 0.42) * dt;
     const focal = Math.min(w, h) * 0.55;
+    const [cx, cy] = origin ?? [w / 2, h / 2];
     ctx.globalCompositeOperation = "lighter";
 
     for (const m of this.motes) {
@@ -66,8 +67,8 @@ export class Dust {
       if (m.z < 0.04) Object.assign(m, this.spawn(1));
       else if (m.z > 1) Object.assign(m, this.spawn(0.05));
 
-      const sx = w / 2 + (m.x / m.z) * focal;
-      const sy = h / 2 + (m.y / m.z) * focal;
+      const sx = cx + (m.x / m.z) * focal;
+      const sy = cy + (m.y / m.z) * focal;
       if (sx < -20 || sx > w + 20 || sy < -20 || sy > h + 20) continue;
 
       const near = Math.min(1, (1 - m.z) * 1.6);
@@ -78,8 +79,8 @@ export class Dust {
 
       // Streak along the direction of travel when moving fast.
       const streak = Math.min(18, Math.abs(speed) * 6 / m.z);
-      const dx = sx - w / 2;
-      const dy = sy - h / 2;
+      const dx = sx - cx;
+      const dy = sy - cy;
       const len = Math.hypot(dx, dy) || 1;
 
       ctx.strokeStyle = `rgba(243, 214, 140, ${alpha})`;

@@ -127,13 +127,17 @@ The `work/claims/` locks still coordinate agents sharing one checkout.
 
 ## Chapter checklist
 
-As of 2026-11-06, chapters 01–07 are complete through **07.18, درگذشتن فریدون**.
-The app includes **40 of 645 sections** and **1,983 couplets**, with paintings
+As of 2026-11-07, chapters 01–07 are complete through **07.18, درگذشتن فریدون**.
+Chapter 08 is implemented through **09.31, اندرز کردن منوچهر**. The portrait
+reader keeps the painting above its verses; validation is recorded in the
+[section reports](reports/).
+The app includes **71 of 645 sections** and **3,595 couplets**, with paintings
 and generative music.
-Next: **09.01, داستان زال و رودابه**. Unchecked chapters remain to be illustrated and scored.
+Next: **10.01, پادشاهی نوذر**. Unchecked chapters remain to be illustrated and scored.
 
 Open any of the 61 chapters below to see its subsections.[^chapters]
-Checked items are complete. The full text is available in [Markdown](text/shahnameh.md),
+Checked items have reader sections; their reports record validation and remaining issues.
+The full text is available in [Markdown](text/shahnameh.md),
 [JSON](text/shahnameh.json), and the [original PDF](text/shahnameh-ferdowsi.pdf).
 
 <!-- chapter-checklist:start -->
@@ -219,40 +223,40 @@ Checked items are complete. The full text is available in [Markdown](text/shahna
 </details>
 
 <details>
-<summary>○ 08 · منوچهر (1/32 sections)</summary>
+<summary>✓ 08 · منوچهر (32/32 sections)</summary>
 
 - [x] [08.01 · پادشاهی منوچهر](src/content/sections/08-01.ts)
-- [ ] 09.01 · داستان زال و رودابه
-- [ ] 09.02 · پناه دادن سیمرغ، زال را
-- [ ] 09.03 · آگاه شدن سام نریمان، از زال
-- [ ] 09.04 · آگاه شدن منوچهر از کار سام و زال
-- [ ] 09.05 · رفتن زال به سوی کابل
-- [ ] 09.06 · دل باختن زال به رودابه
-- [ ] 09.07 · مهر پیوستن رودابه به زال
-- [ ] 09.08 · رفتن کنیزکان رودابه به دیدن زال زر
-- [ ] 09.09 · بازگشتن کنیزکان به نزد رودابه
-- [ ] 09.10 · رای زدن زال با موبدان در کار رودابه
-- [ ] 09.11 · نامه زال به نزدیک سام
-- [ ] 09.12 · رای زدن سام با موبدان در کار زال
-- [ ] 09.13 · آگاه شدن سیندخت از شیفتگی زال و رودابه
-- [ ] 09.14 · آگاه شدن مهراب از کار رودابه
-- [ ] 09.15 · آگاه شدن منوچهر از کار زال
-- [ ] 09.16 · رسین سام به نزد منوچهر
-- [ ] 09.17 · رفتن سام به جنگ مهراب
-- [ ] 09.18 · نامه سام نزد منوچهر شاه
-- [ ] 09.19 · خشم گرفتن مهراب بر سیندخت
-- [ ] 09.20 · رفتن سیندخت به نزد سام
-- [ ] 09.21 · رسیدن زال با نامه سام به نزد منوچهر
-- [ ] 09.22 · پرسیدن منوچهر، اختر زال را از اخترماران
-- [ ] 09.23 · آزمودن موبدان، زال را
-- [ ] 09.24 · هنر نمودن زال در میدان
-- [ ] 09.25 · پاسخ منوچهر به سام
-- [ ] 09.26 · رسیدن زال به سام
-- [ ] 09.27 · گواه گیران رودابه و زال
-- [ ] 09.28 · رستم
-- [ ] 09.29 · رستمزاد
-- [ ] 09.30 · آمدن سام به دیدن رستم
-- [ ] 09.31 · اندرز کردن منوچهر
+- [x] [09.01 · داستان زال و رودابه](src/content/sections/09-01.ts)
+- [x] [09.02 · پناه دادن سیمرغ، زال را](src/content/sections/09-02.ts)
+- [x] [09.03 · آگاه شدن سام نریمان، از زال](src/content/sections/09-03.ts)
+- [x] [09.04 · آگاه شدن منوچهر از کار سام و زال](src/content/sections/09-04.ts)
+- [x] [09.05 · رفتن زال به سوی کابل](src/content/sections/09-05.ts)
+- [x] [09.06 · دل باختن زال به رودابه](src/content/sections/09-06.ts)
+- [x] [09.07 · مهر پیوستن رودابه به زال](src/content/sections/09-07.ts)
+- [x] [09.08 · رفتن کنیزکان رودابه به دیدن زال زر](src/content/sections/09-08.ts)
+- [x] [09.09 · بازگشتن کنیزکان به نزد رودابه](src/content/sections/09-09.ts)
+- [x] [09.10 · رای زدن زال با موبدان در کار رودابه](src/content/sections/09-10.ts)
+- [x] [09.11 · نامه زال به نزدیک سام](src/content/sections/09-11.ts)
+- [x] [09.12 · رای زدن سام با موبدان در کار زال](src/content/sections/09-12.ts)
+- [x] [09.13 · آگاه شدن سیندخت از شیفتگی زال و رودابه](src/content/sections/09-13.ts)
+- [x] [09.14 · آگاه شدن مهراب از کار رودابه](src/content/sections/09-14.ts)
+- [x] [09.15 · آگاه شدن منوچهر از کار زال](src/content/sections/09-15.ts)
+- [x] [09.16 · رسین سام به نزد منوچهر](src/content/sections/09-16.ts)
+- [x] [09.17 · رفتن سام به جنگ مهراب](src/content/sections/09-17.ts)
+- [x] [09.18 · نامه سام نزد منوچهر شاه](src/content/sections/09-18.ts)
+- [x] [09.19 · خشم گرفتن مهراب بر سیندخت](src/content/sections/09-19.ts)
+- [x] [09.20 · رفتن سیندخت به نزد سام](src/content/sections/09-20.ts)
+- [x] [09.21 · رسیدن زال با نامه سام به نزد منوچهر](src/content/sections/09-21.ts)
+- [x] [09.22 · پرسیدن منوچهر، اختر زال را از اخترماران](src/content/sections/09-22.ts)
+- [x] [09.23 · آزمودن موبدان، زال را](src/content/sections/09-23.ts)
+- [x] [09.24 · هنر نمودن زال در میدان](src/content/sections/09-24.ts)
+- [x] [09.25 · پاسخ منوچهر به سام](src/content/sections/09-25.ts)
+- [x] [09.26 · رسیدن زال به سام](src/content/sections/09-26.ts)
+- [x] [09.27 · گواه گیران رودابه و زال](src/content/sections/09-27.ts)
+- [x] [09.28 · رستم](src/content/sections/09-28.ts)
+- [x] [09.29 · رستمزاد](src/content/sections/09-29.ts)
+- [x] [09.30 · آمدن سام به دیدن رستم](src/content/sections/09-30.ts)
+- [x] [09.31 · اندرز کردن منوچهر](src/content/sections/09-31.ts)
 
 </details>
 

@@ -9,6 +9,8 @@
     "deploy": "pnpm build && cf deploy --prebuilt --mode production",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
+    "test:portrait:geometry": "node tests/portrait-layout.test.mjs",
+    "test:portrait:browser": "node tests/portrait-reader.mjs",
     "setup": "pnpm install --frozen-lockfile && python3 -m venv .venv && .venv/bin/pip install -q pillow",
     "status": "node scripts/next_sections.mjs",
     "check:chapters": "node scripts/check_chapters.mjs",

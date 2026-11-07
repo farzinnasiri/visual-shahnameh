@@ -17,10 +17,17 @@ a 3D render or a photograph.
 
 ## Rules for every painting
 
-1. **Centre focus.** The most luminous element sits at the exact centre of the
-   frame. The reader's camera dives into that point to reach the next scene.
-2. **Safe zone.** Everything important stays inside the central ~45% width.
-   The sides must still be beautiful, but they get cropped on phones.
+1. **Centre focus.** Aim the most luminous element at the centre of the
+   frame. The reader's camera dives into that painted light to reach the next
+   scene. Record its actual location in `Scene.focus` if it is off-centre;
+   never substitute a face or an empty point to compensate for a crop.
+2. **Composition area.** Keep important action inside the central ~45% width;
+   the sides must still be beautiful. This is composition guidance, not a
+   visibility guarantee for an immersive cover camera or a transition dive.
+   The default portrait reader fits the whole painting above a separate verse
+   region, over a soft full-bleed backdrop. An explicit immersive section and
+   the light-centred dives can crop differently with viewport shape and zoom;
+   inspect the actual reader rather than relying on prompt coordinates alone.
 3. **No text, no frames, no borders, no margins, no signatures.** Calligraphy,
    rulings and illumination are drawn in code. The painting runs full-bleed.
 4. **Format.** Landscape 3:2 (1536×1024) unless the prompt says otherwise.
