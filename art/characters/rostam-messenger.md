@@ -1,6 +1,6 @@
 # Messenger of Rostam's birth
 
-Anonymous courier carrying the silk effigy and reply in 09.29. A recurring visual role, without asserting identity with an earlier unnamed messenger.
+Anonymous courier carrying the silk effigy and reply in 08.30. A recurring visual role, without asserting identity with an earlier unnamed messenger.
 
 ## Prompt line
 

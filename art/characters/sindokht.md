@@ -1,7 +1,7 @@
 # Sindokht · سیندخت
 
 Queen of Kabul, wife of Mehrab and mother of Rudabeh. Her intelligence and
-restraint turn the household crisis into diplomacy. First painted in 09.07.
+restraint turn the household crisis into diplomacy. First painted in 08.08.
 
 ## Prompt line
 
@@ -9,6 +9,6 @@ Sindokht, a mature adult queen at small Persian manuscript scale, with an olive 
 
 ## Notes
 
-- 2026-11-06: In 09.13 she first discovers the lovers' messages; she does not
-  yet visit Sam. In 09.14 her restraint prevents Mehrab's immediate violence.
+- 2026-11-06: In 08.14 she first discovers the lovers' messages; she does not
+  yet visit Sam. In 08.15 her restraint prevents Mehrab's immediate violence.
   Her later embassy must retain this face, headcloth and turquoise robe.

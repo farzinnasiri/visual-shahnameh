@@ -1,6 +1,6 @@
 # Rudabeh · رودابه
 
-Mehrab and Sindokht's daughter in Kabul. Introduced through a courtier's description in 09.05; Zal has not yet seen her. Never place her beside him before their meeting in the poem.
+Mehrab and Sindokht's daughter in Kabul. Introduced through a courtier's description in 08.06; Zal has not yet seen her. Never place her beside him before their meeting in the poem.
 
 ## Prompt line
 
@@ -8,4 +8,4 @@ Rudabeh, a young adult woman at small manuscript scale, with an ivory oval face,
 
 ## Notes
 
-- 2026-11-06: In 09.05 she is described, not met: a separate screened garden may evoke the description, but never a shared composition with Zal. In 09.06 she remains unseen by Zal. Do not invent a balcony encounter early.
+- 2026-11-06: In 08.06 she is described, not met: a separate screened garden may evoke the description, but never a shared composition with Zal. In 08.07 she remains unseen by Zal. Do not invent a balcony encounter early.

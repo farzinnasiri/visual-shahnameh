@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 05.01 · جمشید → پادشاهی جمشید
- * Couplets: text/shahnameh.json, section 05.01, unchanged.
+ * Couplets: text/chapters, section 05.01, unchanged.
  * Paintings: art/prompts/05-01.md. Light layer reused from 01.01.
  *
  * Seventy-four couplets, nineteen paintings. Jamshid's glory runs from the crown through the four estates, the divs' buildings, Nowruz and the three hundred years, then the boast and the farr leaving. Zahhak is not in this section.

@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.01 · فریدون → آغاز داستان
- * Couplets: text/shahnameh.json, section 07.01, unchanged.
+ * Couplets: text/chapters, section 07.01, unchanged.
  * Paintings: art/prompts/07-01.md. Light layer reused from 01.01.
  *
  * Forty-eight couplets, thirteen scenes. The threshold is the empty hall

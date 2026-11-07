@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 04.01 · تهمورس → پادشاهی تهمورس
- * Couplets: text/shahnameh.json, section 04.01, unchanged.
+ * Couplets: text/chapters, section 04.01, unchanged.
  * Paintings: art/prompts/04-01.md. Light layer reused from 01.01.
  *
  * Forty-six couplets, eleven paintings. The threshold follows Hushang's empty seat. Tahmuras binds a faceless darkness, breaks the div host, and is taught writing on pages that show no letters.

@@ -3,9 +3,9 @@ import type { Section } from "../types";
 
 /**
  * 08.01 · منوچهر → پادشاهی منوچهر
- * Source: text/shahnameh.json, including its enclosing chapter.
+ * Source: text/chapters, including its enclosing chapter.
  * Ten paintings: the sealed tomb yields to the throne, then to Sam’s home.
- * The final domestic doorway anticipates 09.01 without showing its events.
+ * The final domestic doorway anticipates 08.02 without showing its events.
  */
 const art = sectionArt("08.01");
 

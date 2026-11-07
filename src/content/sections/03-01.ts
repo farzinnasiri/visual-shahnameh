@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 03.01 · هوشنگ → پادشاهی هوشنگ
- * Couplets: text/shahnameh.json, section 03.01, unchanged.
+ * Couplets: text/chapters, section 03.01, unchanged.
  * Paintings: art/prompts/03-01.md. Light layer reused from 01.01.
  *
  * Thirty-eight couplets, eleven paintings. The threshold is the empty seat after Kayumars. Hushang is the boy of 02.01, grown: short beard, the one-disc diadem, the leopard tunic.

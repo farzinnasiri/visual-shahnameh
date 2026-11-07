@@ -9,5 +9,5 @@ The riddle horses are two tiny ordinary manuscript horses, one ivory-white with 
 
 ## Notes
 
-- 2026-11-06: Consolidated from accepted 09.23/02 imagery before the answer
+- 2026-11-06: Consolidated from accepted 08.24/02 imagery before the answer
   painting; keep the white-blue and black-red pairing unchanged.

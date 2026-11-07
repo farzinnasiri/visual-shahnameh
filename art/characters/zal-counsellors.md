@@ -1,6 +1,6 @@
 # Zal's counsellors · موبدان و ردان زال
 
-The anonymous learned men summoned in 09.10 to advise Zal about marriage.
+The anonymous learned men summoned in 08.11 to advise Zal about marriage.
 Their quiet disagreement does not make them villains or religious figures.
 
 ## Prompt line
@@ -9,5 +9,5 @@ Zal's learned counsellors are three small adult manuscript men: an elderly white
 
 ## Notes
 
-- 2026-11-06: In 09.10 the silence comes from political fear about Mehrab's
+- 2026-11-06: In 08.11 the silence comes from political fear about Mehrab's
   ancestry. Do not add literal snakes to the people or hall.

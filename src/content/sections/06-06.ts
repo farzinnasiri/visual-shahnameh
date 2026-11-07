@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.06 · ضحاک → آهنگ جنگ فریدون با ضحاک
- * Couplets: text/shahnameh.json, section 06.06, unchanged.
+ * Couplets: text/chapters, section 06.06, unchanged.
  * Paintings: art/prompts/06-06.md. Light layer reused from 01.01.
  *
  * Two hundred and two couplets. The march from the Arvand, the

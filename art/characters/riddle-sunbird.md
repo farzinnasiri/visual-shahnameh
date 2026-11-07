@@ -1,6 +1,6 @@
 # The sun bird · مرغ نمادین خورشید
 
-A small symbolic bird between the two cypresses in 09.23, distinct from
+A small symbolic bird between the two cypresses in 08.24, distinct from
 the Simurgh. No celestial person or religious figure is depicted.
 
 ## Prompt line

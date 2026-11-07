@@ -1,8 +1,8 @@
 # Rostam · رستم
 
-Son of Zal and Rudabeh. First born in09.29; grows to eight years by its end.
-In09.30 he remains a boy of eight, exceptionally strong but never an adult.
-The silk effigy carried to Sam in09.29 is a crafted toy, not the living child.
+Son of Zal and Rudabeh. First born in08.30; grows to eight years by its end.
+In08.31 he remains a boy of eight, exceptionally strong but never an adult.
+The silk effigy carried to Sam in08.30 is a crafted toy, not the living child.
 
 ## Prompt line
 
@@ -10,9 +10,9 @@ Rostam, son of Zal and Rudabeh, at small Persian manuscript scale: a broad round
 
 ## Notes
 
-- 2026-11-06:09.29's silk effigy is visibly a small stitched cloth doll with
+- 2026-11-06:08.30's silk effigy is visibly a small stitched cloth doll with
   stuffed seams, patterned silk, a toy spear and mace, carried on a miniature
   model horse. It is never a living adult Rostam or a real armed infant.
-- 2026-11-06:09.30 grants the eight-year-old a gold circlet, a shield and mace
+- 2026-11-06:08.31 grants the eight-year-old a gold circlet, a shield and mace
   on an elephant's small throne. Keep his child face and short black hair.
   The elephant is grey, with an ivory saddlecloth edged in dull vermilion.

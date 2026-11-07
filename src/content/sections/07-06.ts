@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.06 · فریدون → رشک بردن سلم، بر ایرج
- * Couplets: text/shahnameh.json, section 07.06, unchanged.
+ * Couplets: text/chapters, section 07.06, unchanged.
  * Paintings: art/prompts/07-06.md. Light layer reused from 01.01.
  *
  * One hundred and eleven couplets, twenty-two scenes. The threshold is

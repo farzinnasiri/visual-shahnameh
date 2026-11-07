@@ -1,6 +1,6 @@
 # Shahnameh text
 
-The Shahnameh source PDF and its structured extraction live together here.
+The text is `chapters/`. The PDF is the reference that extraction was checked against.
 The [PDF preface](shahnameh-ferdowsi.pdf#page=4), on physical page 4, credits
 Pejman Pourhossein (پژمان پورحسین), dated Shahrivar 1391 SH. It describes a
 compilation consulting Fereydoun Joneydi's first edition of 1387 SH,
@@ -10,22 +10,17 @@ Joneydi edition; our earlier attribution to "Joneydi's 1354 edition" was wrong.
 
 | File | Use it for |
 | --- | --- |
-| [shahnameh-ferdowsi.pdf](shahnameh-ferdowsi.pdf) | Original 1,973-page PDF, including its preface and contents. `pdfPage` values refer to physical PDF pages, starting at 1. |
-| `shahnameh.md` | Reading and grepping. `#` = chapter, `##` = section (sub-chapter), one numbered couplet per line: `first hemistich / second hemistich`. |
-| `shahnameh.json` | Code. `chapters[].sections[].couplets[]`, where each couplet is `[first, second]`. Chapters have IDs `01` through `61`; sections keep their original IDs and `pdfPage`. A section's prefix does not identify its current chapter. |
-| [chapter-map.json](chapter-map.json) | The 61 chapter titles, reference links, eras, section ranges and reviewed heading joins. Separate checksums cover raw PDF extraction and corrected section content. |
+| [chapters/NN.json](chapters) | The text. One file per chapter, `01.json` through `61.json`. A section id is `chapter.place`: `10.01` is the first section of chapter 10. Couplets are `[first, second]`. |
+| `shahnameh.md` | The same text for reading and grepping. `#` = chapter, `##` = section, one numbered couplet per line: `first hemistich / second hemistich`. |
+| [shahnameh-ferdowsi.pdf](shahnameh-ferdowsi.pdf) | Reference only, for checking a doubtful line against the page it was extracted from. `pdfPage` is that physical page, starting at 1. It is not a section id. |
+| [chapter-map.json](chapter-map.json) | Used only when rebuilding the chapter files from the PDF. Its `legacyFirstSection` values are the PDF's own heading numbers, not the published section ids. |
 | `anomalies.txt` | The 10 rows where a hemistich had no partner in the PDF. Check these by eye against the PDF before using those passages. |
 
-Current organization: 61 chapters, 645 sections, 49,615 verse rows.
+The book is 61 chapters, 645 sections, 49,615 verse rows.
 Ten rows lack one hemistich, so this is not a fully proofread couplet count.
-The extractor first assigns permanent section IDs from the PDF's original
-50 font-based groups, then applies `chapter-map.json` to organize them into
-61 chapters following Ganjoor. Reviewed heading continuations are joined after
-assigning the legacy IDs. Verse text and the IDs of reading sections stay
-intact. For example, chapter `08` contains sections `08.01`
-through `09.31`; chapter `61` contains `50.01` through `50.14`.
-The chapter organization matches the reference; the finer subsection divisions
-and existing PDF verse pairings have not been replaced with Ganjoor's text.
+The chapter files follow the 61-chapter list used by Ganjoor. The finer
+subsection divisions and the PDF's verse pairings have not been replaced
+with Ganjoor's text. Builders read `chapters/NN.json` and do not need the PDF.
 
 The first sub-chapter, آغاز کتاب → آغاز کتاب, is section `01.01` (15 couplets).
 
@@ -41,7 +36,7 @@ an empty stop between `07.12` and `07.14`.
 ```sh
 python3 -m venv .venv && .venv/bin/pip install pymupdf
 .venv/bin/python -I scripts/build_text.py text/shahnameh-ferdowsi.pdf text/
-python3 -I scripts/build_toc.py text/shahnameh.json src/content/toc.json
+python3 -I scripts/build_toc.py text/chapters src/content/toc.json
 node scripts/update_readme_contents.mjs
 pnpm check:chapters
 

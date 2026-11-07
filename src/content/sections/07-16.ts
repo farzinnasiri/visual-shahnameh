@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.16 · فریدون → نبرد منوچهر با سلم و تور
- * Couplets: text/shahnameh.json, section 07.16 (pdf p112), unchanged.
+ * Couplets: text/chapters, section 07.16 (pdf p112), unchanged.
  * Paintings: art/prompts/07-16.md. Light layer reused from 01.01.
  *
  * Seventy-eight couplets, sixteen scenes. The threshold is the empty plain between the hosts, one watch-fire.

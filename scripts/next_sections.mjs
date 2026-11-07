@@ -10,13 +10,14 @@
 // "Built" = src/content/sections/<id>.ts exists. "Claimed" = work/claims/<id>/
 // exists (made with mkdir, which is atomic, so two agents can't both win).
 // Claims older than CLAIM_TTL_HOURS are treated as abandoned.
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadBook } from "./book.mjs";
 
 const CLAIM_TTL_HOURS = 8;
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const book = JSON.parse(readFileSync(join(root, "text/shahnameh.json"), "utf8"));
+const book = loadBook(root);
 const claimsDir = join(root, "work/claims");
 const file = (id) => join(root, "src/content/sections", `${id.replace(".", "-")}.ts`);
 
@@ -80,9 +81,11 @@ if (opt("count") || opt("chapters")) {
 } else {
   const done = all.filter((s) => built(s.id));
   const claimed = all.filter((s) => !built(s.id) && claim(s.id));
+  const complete = book.chapters.filter((ch) => ch.sections.every((s) => built(s.id)));
+  console.log(`chapters ${complete.length}/${book.chapters.length} complete`);
   console.log(`built    ${done.length}/${all.length} sections, ${done.reduce((n, s) => n + s.couplets, 0)}/${all.reduce((n, s) => n + s.couplets, 0)} couplets`);
-  console.log(`claimed  ${claimed.map((s) => `${s.id} (${claim(s.id).by})`).join(", ") || "none"}`);
-  console.log(`next up  ${todo.slice(0, 10).map((s) => `${s.id} ${s.title} (${s.couplets})`).join("\n         ")}`);
+  console.log(`claimed  ${claimed.map((s) => `chapter ${s.chapter} · ${s.id} (${claim(s.id).by})`).join(", ") || "none"}`);
+  console.log(`next up  ${todo.slice(0, 10).map((s) => `chapter ${s.chapter} ${s.chapterTitle} · ${s.id} ${s.title} (${s.couplets})`).join("\n         ")}`);
 }
 
 /** Split sections into n contiguous bundles of roughly equal couplet counts. */

@@ -1,6 +1,6 @@
 # The human reaper · دروگر نمادین زمان
 
-An ordinary human field worker in the question and its answer in 09.23.
+An ordinary human field worker in the question and its answer in 08.24.
 He symbolizes time, not a deity, religious figure or Western grim reaper.
 
 ## Prompt line

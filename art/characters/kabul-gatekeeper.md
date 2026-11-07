@@ -1,6 +1,6 @@
 # Kabul gatekeeper · دربان کاخ کابل
 
-The gatekeeper who questions the flower-gathering attendants in 09.09.
+The gatekeeper who questions the flower-gathering attendants in 08.10.
 
 ## Prompt line
 

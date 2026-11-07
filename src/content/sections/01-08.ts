@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.08 · آغاز کتاب → گفتار اندر فراهم آمدن شاهنامه
- * Couplets: text/shahnameh.json, section 01.08 (pdf p38), unchanged.
+ * Couplets: text/chapters, section 01.08 (pdf p38), unchanged.
  * Paintings: art/prompts/01-08.md. Light layer reused from 01.01.
  */
 const art = sectionArt("01.08");

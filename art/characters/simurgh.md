@@ -1,7 +1,7 @@
 # Simurgh · سیمرغ
 
 The great wise bird of Alborz, foster parent of Zal, not a religious figure.
-First appears in 09.02. The same plumage follows her later interventions.
+First appears in 08.03. The same plumage follows her later interventions.
 
 ## Prompt line
 

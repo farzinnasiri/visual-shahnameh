@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.09 · آغاز کتاب → داستان دقیقی شاعر
- * Couplets: text/shahnameh.json, section 01.09 (pdf p39), unchanged.
+ * Couplets: text/chapters, section 01.09 (pdf p39), unchanged.
  * Paintings: art/prompts/01-09.md. Light layer reused from 01.01.
  * Couplet 10 is a prayer and couplet 19 names a prophet: both are painted
  * as lamp-light and an empty path, with no divine or prophetic figure.

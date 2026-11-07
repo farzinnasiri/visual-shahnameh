@@ -1,7 +1,7 @@
 # Zal · زال
 
-Son of Sam, raised by the Simurgh. First appears in 09.01 as an infant, grows
-in 09.02, and returns to Sam in 09.03. His white hair is human, never a sign
+Son of Sam, raised by the Simurgh. First appears in 08.02 as an infant, grows
+in 08.03, and returns to Sam in 08.04. His white hair is human, never a sign
 of a div. Do not confuse him with his father Sam or his son Rostam.
 
 ## Prompt line
@@ -13,7 +13,7 @@ Zal, son of Sam, a human of unusually fair skin, dark almond eyes with white eye
 
 ## Notes
 
-2026-11-06: In 09.01 the infant is always covered discreetly by the ivory
+2026-11-06: In 08.02 the infant is always covered discreetly by the ivory
 wrap, even on the bare rock. This preserves the text's vulnerability without
 explicit nudity. His white hair and dark eyes must remain visible at small scale.
-The turquoise coat first appears only when Sam clothes him in 09.03, couplet 62.
+The turquoise coat first appears only when Sam clothes him in 08.04, couplet 62.

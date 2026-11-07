@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.05 · فریدون → بخش کردن فریدون جهان را بر پسران
- * Couplets: text/shahnameh.json, section 07.05, unchanged.
+ * Couplets: text/chapters, section 07.05, unchanged.
  * Paintings: art/prompts/07-05.md. Light layer reused from 01.01.
  *
  * Thirteen couplets, five scenes. The threshold is the covered secret.

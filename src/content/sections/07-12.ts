@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.12 · فریدون → زادن منوچهر از مادر
- * Couplets: text/shahnameh.json, section 07.12, unchanged.
+ * Couplets: text/chapters, section 07.12, unchanged.
  * Paintings: art/prompts/07-12.md. Light layer reused from 01.01.
  */
 const art = sectionArt("07.12");

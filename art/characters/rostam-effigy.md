@@ -1,6 +1,6 @@
 # Silk effigy of Rostam
 
-Recurring inanimate gift in 09.29, distinct from the living newborn and later child.
+Recurring inanimate gift in 08.30, distinct from the living newborn and later child.
 
 ## Prompt line
 

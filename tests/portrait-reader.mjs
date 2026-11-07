@@ -12,7 +12,7 @@ const output = "work/portrait-reader";
 mkdirSync(output, { recursive: true });
 const results = [];
 const failures = [];
-const samples = new Set(["01.01", "02.01", "09.01", "09.09", "09.14", "09.18", "09.24", "09.31"]);
+const samples = new Set(["01.01", "02.01", "08.02", "08.10", "08.15", "08.19", "08.25", "08.32"]);
 try {
   const page = await browser.newPage();
   page.on("pageerror", error => failures.push(`Browser error: ${error.message}`));
@@ -56,15 +56,15 @@ try {
   // Desktop/landscape and reduced-motion smoke cases exercise the live reader.
   for (const [width, height] of [[1440, 900], [844, 390], [768, 1024]]) {
     await page.setViewportSize({ width, height });
-    await page.goto(`${server.resolvedUrls.local[0]}?beat=3.3#/09.14`);
-    await page.waitForFunction(() => window.__journey?.section.id === "09.14");
+    await page.goto(`${server.resolvedUrls.local[0]}?beat=3.3#/08.15`);
+    await page.waitForFunction(() => window.__journey?.section.id === "08.15");
     assert.equal(await page.evaluate(() => window.__journey.portraitLayouts.every(x => x === null)), true);
     await page.waitForFunction(() => window.__journey.scenes.filter(n => n.requested).every(n => n.ready));
-    await page.screenshot({ path: `${output}/09.14-${width}x${height}.png` });
+    await page.screenshot({ path: `${output}/08.15-${width}x${height}.png` });
   }
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(`${server.resolvedUrls.local[0]}?beat=0#/09.14`);
-  await page.waitForFunction(() => window.__journey?.section.id === "09.14");
+  await page.goto(`${server.resolvedUrls.local[0]}?beat=0#/08.15`);
+  await page.waitForFunction(() => window.__journey?.section.id === "08.15");
   const reveal = await page.evaluate(() => window.__journey.timeline.scenes[2].revealed);
   const origins = [];
   for (const beat of [reveal - .001, reveal + .001, reveal + .3, reveal - .575]) {
@@ -75,7 +75,7 @@ try {
       const style = getComputedStyle(window.__journey.stage);
       return [parseFloat(style.getPropertyValue("--portal-x")), parseFloat(style.getPropertyValue("--portal-y"))];
     }));
-    await page.screenshot({ path: `${output}/09.14-transition-${beat.toFixed(3)}.png` });
+    await page.screenshot({ path: `${output}/08.15-transition-${beat.toFixed(3)}.png` });
   }
   assert.ok(Math.hypot(origins[0][0] - origins[1][0], origins[0][1] - origins[1][1]) < 2, "portal origin must not jump at reveal");
   const heldBeat = await page.evaluate(() => window.__journey.u);
@@ -86,15 +86,15 @@ try {
   assert.equal(await page.evaluate(() => window.__journey.portraitLayouts.every(x => x === null)), true);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(`${server.resolvedUrls.local[0]}?beat=3.3#/09.14`);
+  await page.goto(`${server.resolvedUrls.local[0]}?beat=3.3#/08.15`);
   await page.reload();
-  await page.waitForFunction(() => window.__journey?.section.id === "09.14");
+  await page.waitForFunction(() => window.__journey?.section.id === "08.15");
   assert.equal(await page.evaluate(() => window.__journey.reduced && window.__journey.portraitLayouts[1]?.fits), true);
   await page.waitForFunction(() => window.__journey.scenes.filter(n => n.requested).every(n => n.ready));
-  await page.screenshot({ path: `${output}/09.14-reduced-motion.png` });
+  await page.screenshot({ path: `${output}/08.15-reduced-motion.png` });
   // A very large user font must scroll inside its card, without turning pages.
-  await page.goto(`${server.resolvedUrls.local[0]}#/09.01`);
-  await page.waitForFunction(() => window.__journey?.section.id === "09.01");
+  await page.goto(`${server.resolvedUrls.local[0]}#/08.02`);
+  await page.waitForFunction(() => window.__journey?.section.id === "08.02");
   await page.evaluate(() => {
     const journey = window.__journey;
     journey.verses.style.setProperty("--portrait-verse-size", "96px");
@@ -109,7 +109,7 @@ try {
   await card.hover(); await page.mouse.wheel(0, 300); await page.waitForTimeout(150);
   assert.ok(await card.evaluate(el => el.scrollTop > 0), "wheel must scroll the long couplet");
   assert.ok(Math.abs(await page.evaluate(() => window.__journey.u) - 3.3) < .01, "card scrolling must not advance the poem");
-  await page.screenshot({ path: `${output}/09.01-large-text.png` });
+  await page.screenshot({ path: `${output}/08.02-large-text.png` });
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.waitForFunction(() => !document.querySelector(".portrait-overflow"));
   assert.equal(await page.evaluate(() => {

@@ -1,7 +1,7 @@
 # Zal's letter courier · پیک نامه‌ی زال
 
 The anonymous adult male rider who carries Zal's letter to Sam and brings
-the answer back in 09.12. Distinct from the woman messenger of 09.13.
+the answer back in 08.13. Distinct from the woman messenger of 08.14.
 
 ## Prompt line
 
@@ -10,7 +10,7 @@ Zal's anonymous adult male letter courier at small Persian manuscript scale, wit
 ## Notes
 
 - 2026-11-06: The appearance was consolidated during visual review of
-  09.12. Its earlier prompts describe an anonymous courier without this
+  08.13. Its earlier prompts describe an anonymous courier without this
   shared line; their manifests retain the actual prompts used rather than
   retroactively claiming the line was submitted. The waiting green-robed
   man behind Sam in 03-band is a camp attendant, not this courier.

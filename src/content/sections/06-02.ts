@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.02 · ضحاک → خواب دیدن ضحاک
- * Couplets: text/shahnameh.json, section 06.02, unchanged.
+ * Couplets: text/chapters, section 06.02, unchanged.
  * Paintings: art/prompts/06-02.md. Light layer reused from 01.01.
  */
 const art = sectionArt("06.02");

@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.17 · فریدون → نامه منوچهر به نزد فریدون
- * Couplets: text/shahnameh.json, section 07.17 (pdf p115), unchanged.
+ * Couplets: text/chapters, section 07.17 (pdf p115), unchanged.
  * Paintings: art/prompts/07-17.md. Light layer reused from 01.01.
  *
  * One hundred and thirty-two couplets, twenty-four scenes. The threshold is the empty tent and the unopened letter.

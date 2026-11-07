@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 05.02 · جمشید → داستان مرداس
- * Couplets: text/shahnameh.json, section 05.02, unchanged.
+ * Couplets: text/chapters, section 05.02, unchanged.
  * Paintings: art/prompts/05-02.md. Light layer reused from 01.01.
  */
 const art = sectionArt("05.02");

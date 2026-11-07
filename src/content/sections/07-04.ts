@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.04 · فریدون → رفتن پسران فریدون نزد شاه یمن
- * Couplets: text/shahnameh.json, section 07.04, unchanged.
+ * Couplets: text/chapters, section 07.04, unchanged.
  * Paintings: art/prompts/07-04.md. Light layer reused from 01.01.
  *
  * Twenty-four couplets, seven scenes. The threshold is the house at night.

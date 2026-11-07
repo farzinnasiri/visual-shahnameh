@@ -8,7 +8,7 @@ export interface Toc {
     id: string;
     title: string;
     era: string;
-    /** [permanent section id, title, couplet count]; the id prefix is not the chapter id. */
+    /** [section id, title, couplet count]. The id is chapter.place, as in "10.01". */
     sections: [string, string, number][];
   }[];
 }

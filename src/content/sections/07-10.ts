@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.10 · فریدون → کشتن برادران، ایرج را
- * Couplets: text/shahnameh.json, section 07.10, unchanged.
+ * Couplets: text/chapters, section 07.10, unchanged.
  * Paintings: art/prompts/07-10.md. Light layer reused from 01.01.
  */
 const art = sectionArt("07.10");

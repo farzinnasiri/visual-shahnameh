@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.08 · فریدون → نامه نوشتن فریدون به سلم و تور
- * Couplets: text/shahnameh.json, section 07.08, unchanged.
+ * Couplets: text/chapters, section 07.08, unchanged.
  * Paintings: art/prompts/07-08.md. Light layer reused from 01.01.
  */
 const art = sectionArt("07.08");

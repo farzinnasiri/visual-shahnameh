@@ -1,15 +1,17 @@
 // Check that chapter regrouping preserves the source and all its consumers.
 import assert from "node:assert/strict";
-import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { coupletDigest, loadBook } from "./book.mjs";
 
 const root = new URL("../", import.meta.url);
 const read = (path) => readFileSync(new URL(path, root), "utf8");
-const book = JSON.parse(read("text/shahnameh.json"));
-const mapping = JSON.parse(read("text/chapter-map.json"));
+const { chapters, sectionAliases, mapping } = loadBook(fileURLToPath(root));
+const book = { chapters, sectionAliases };
 const toc = JSON.parse(read("src/content/toc.json"));
 const sections = book.chapters.flatMap(c => c.sections);
 const ids = sections.map(s => s.id);
+const chapter07 = [...Array(12).keys()].map(i => `07.${String(i + 1).padStart(2, "0")}`).concat(["07.14", "07.15", "07.16", "07.17", "07.18"]);
 assert.equal(sections.find(s => s.id === "07.14")?.title,
   "آگاه شدن سلم و تور از پادشاهی منوچهر فرستادن پیام به نزد فریدون",
   "The two-line heading on PDF page 106 must be one section title");
@@ -17,21 +19,20 @@ assert(!ids.includes("07.13"), "The first heading line must not create an empty 
 assert.equal(new Set(ids).size, ids.length, "Section IDs must be unique");
 assert.equal(book.chapters.length, 61, "Expected the 61-chapter organization");
 assert.equal(mapping.chapters.length, 61);
-
-// Reviewed source checksum, including the joined heading correction.
-// It includes each canonical section ID, title, PDF page and paired verse.
-const payload = sections.map(s => [s.id, s.title, s.pdfPage, s.couplets]);
-const digest = createHash("sha256").update(JSON.stringify(payload)).digest("hex");
-assert.equal(digest, mapping.sectionContentSha256, "Source sections changed or moved out of order");
+assert.equal(coupletDigest(book.chapters), mapping.coupletTextSha256, "Verse text changed");
 
 for (const [i, chapter] of book.chapters.entries()) {
   const expected = mapping.chapters[i];
   assert.equal(chapter.id, String(i + 1).padStart(2, "0"));
-  for (const key of ["id", "title", "era", "pdfPage", "reference"]) assert.equal(chapter[key], expected[key]);
-  assert.equal(chapter.sections[0].id, expected.firstSection);
-  assert.equal(chapter.sections.at(-1).id, expected.lastSection);
+  assert.equal(chapter.id, expected.id);
+  for (const key of ["title", "era", "pdfPage", "reference"]) assert.equal(chapter[key], expected[key]);
+  chapter.sections.forEach((section, index) => {
+    assert(section.id.startsWith(`${chapter.id}.`), `${section.id} is not in chapter ${chapter.id}`);
+    if (chapter.id !== "07") assert.equal(section.id, `${chapter.id}.${String(index + 1).padStart(2, "0")}`);
+  });
   assert(toc.eras.some(era => era.id === chapter.era), `Unknown era ${chapter.era}`);
 }
+assert.deepEqual(book.chapters.find(c => c.id === "07").sections.map(s => s.id), chapter07, "Chapter 07 keeps its published ids, with no 07.13");
 assert.deepEqual(toc.chapters, book.chapters.map(c => ({
   id: c.id, title: c.title, era: c.era,
   sections: c.sections.map(s => [s.id, s.title, s.couplets.length]),
@@ -72,6 +73,10 @@ for (const [i, [, summary, body]] of details.entries()) {
   const entries = [...body.matchAll(/^- \[([x ])\] \[?(\d{2}\.\d{2}) ·/gm)];
   assert.deepEqual(entries.map(m => m[2]), chapter.sections.map(s => s.id));
   for (const [j, match] of entries.entries()) assert.equal(match[1] === "x", built(chapter.sections[j]));
+}
+for (const section of sections) {
+  const file = `src/content/sections/${section.id.replace(".", "-")}.ts`;
+  if (existsSync(new URL(file, root))) assert(read(file).includes(`"${section.id}"`), `${file} must use its chapter section id`);
 }
 
 console.log(`✓ ${book.chapters.length} chapters, ${sections.length} sections, ${sections.reduce((n, s) => n + s.couplets.length, 0)} verse rows; Markdown, contents, redirects and README agree`);

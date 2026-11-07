@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.07 · آغاز کتاب → گفتار اندر ستایش پیغمبر
- * Couplets: text/shahnameh.json, section 01.07 (pdf p36), unchanged.
+ * Couplets: text/chapters, section 01.07 (pdf p36), unchanged.
  * Paintings: art/prompts/01-07.md. Light layer reused from 01.01.
  */
 const art = sectionArt("01.07");

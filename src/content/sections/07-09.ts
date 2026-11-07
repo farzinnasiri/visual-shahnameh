@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.09 · فریدون → رفتن ایرج با نامه پدر نزد برادران
- * Couplets: text/shahnameh.json, section 07.09, unchanged.
+ * Couplets: text/chapters, section 07.09, unchanged.
  * Paintings: art/prompts/07-09.md. Light layer reused from 01.01.
  */
 const art = sectionArt("07.09");

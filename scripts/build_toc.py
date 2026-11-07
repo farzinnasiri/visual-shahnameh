@@ -1,11 +1,11 @@
-"""Build the reader's Persian contents from the organized source text.
+"""Build the reader's Persian contents from the 61 chapter files.
 
-Usage: python3 -I scripts/build_toc.py text/shahnameh.json src/content/toc.json
-Chapter titles, ages and section membership come from the 61-chapter source.
-Section IDs remain stable when a chapter changes.
+Usage: python3 -I scripts/build_toc.py text/chapters src/content/toc.json
+Each file in text/chapters is one chapter. A section id is chapter.place.
 """
 
 import json
+import os
 import sys
 
 ERAS = [
@@ -16,9 +16,21 @@ ERAS = [
 ]
 
 
+def load_book(src: str) -> dict:
+    files = sorted(name for name in os.listdir(src) if len(name) == 7 and name.endswith(".json") and name[:2].isdigit())
+    chapters = []
+    for name in files:
+        with open(os.path.join(src, name), encoding="utf-8") as f:
+            chapters.append(json.load(f))
+    map_path = os.path.join(os.path.dirname(src), "chapter-map.json")
+    with open(map_path, encoding="utf-8") as f:
+        mapping = json.load(f)
+    aliases = {item["heading"]: item["section"] for item in mapping["joinedHeadings"]}
+    return {"chapters": chapters, "sectionAliases": aliases}
+
+
 def main(src: str, out: str) -> None:
-    with open(src, encoding="utf-8") as f:
-        book = json.load(f)
+    book = load_book(src)
     chapters = [
         {
             "id": ch["id"],

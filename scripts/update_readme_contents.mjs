@@ -2,9 +2,10 @@
 // Run after rebuilding the source: node scripts/update_readme_contents.mjs
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { loadBook } from "./book.mjs";
 
 const root = new URL("../", import.meta.url);
-const book = JSON.parse(readFileSync(new URL("text/shahnameh.json", root), "utf8"));
+const book = loadBook(fileURLToPath(root));
 const built = (id) => existsSync(new URL(`src/content/sections/${id.replace(".", "-")}.ts`, root));
 const blocks = book.chapters.map((chapter) => {
   const count = chapter.sections.filter((s) => built(s.id)).length;

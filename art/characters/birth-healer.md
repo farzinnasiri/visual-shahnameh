@@ -1,6 +1,6 @@
 # Birth healer
 
-Anonymous skilled healer assisting at Rostam's birth, first painted in 09.28. A continuity choice for the recurring role; the source does not name him.
+Anonymous skilled healer assisting at Rostam's birth, first painted in 08.29. A continuity choice for the recurring role; the source does not name him.
 
 ## Prompt line
 
@@ -8,4 +8,4 @@ The anonymous birth healer is a small mature human man with an olive narrow face
 
 ## Notes
 
-Keep the same clothes and face through preparation in 09.28 and discreet assistance in 09.29. The treatment occurs behind a screen.
+Keep the same clothes and face through preparation in 08.29 and discreet assistance in 08.30. The treatment occurs behind a screen.

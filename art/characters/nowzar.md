@@ -1,6 +1,6 @@
 # Nowzar · نوذر
 
-Manuchehr's son and royal envoy. Introduced in 09.04 when he is sent to greet Sam and invite him to court. He is not Manuchehr and wears no royal crown.
+Manuchehr's son and royal envoy. Introduced in 08.05 when he is sent to greet Sam and invite him to court. He is not Manuchehr and wears no royal crown.
 
 ## Prompt line
 
@@ -8,4 +8,4 @@ Nowzar, a young adult royal envoy at small manuscript scale, with an oval face, 
 
 ## Notes
 
-- 2026-11-06: In 09.04 the greeting is affectionate and ceremonial; no combat and no threatening raised weapon.
+- 2026-11-06: In 08.05 the greeting is affectionate and ceremonial; no combat and no threatening raised weapon.

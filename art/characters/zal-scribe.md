@@ -1,6 +1,6 @@
 # Zal's scribe · نویسندهٔ زال
 
-The adult scribe summoned in 09.11 to write Zal's letter to Sam.
+The adult scribe summoned in 08.12 to write Zal's letter to Sam.
 
 ## Prompt line
 
@@ -9,4 +9,4 @@ Zal's scribe, a small middle-aged manuscript man with an olive narrow face, dark
 ## Notes
 
 - 2026-11-06: He listens and rolls the dictated letter; the finished letter
-  is not yet delivered in 09.11.
+  is not yet delivered in 08.12.

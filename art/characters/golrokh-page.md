@@ -1,7 +1,7 @@
 # Zal's young page · گلرخ
 
 The young adult page who hands Zal the bow, retrieves the fallen river bird,
-talks to Rudabeh's attendants and returns with their message in 09.08.
+talks to Rudabeh's attendants and returns with their message in 08.09.
 
 ## Prompt line
 

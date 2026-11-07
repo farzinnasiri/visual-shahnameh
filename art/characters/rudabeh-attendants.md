@@ -2,7 +2,7 @@
 
 The five adult women who keep Rudabeh's secret, gather flowers by the river,
 carry messages and prepare the meeting. They are people, not magical beings;
-their talk of flying and enchantment in 09.07 is a pledge, not literal magic.
+their talk of flying and enchantment in 08.08 is a pledge, not literal magic.
 
 ## Prompt line
 
@@ -10,6 +10,6 @@ Rudabeh's five adult women attendants, all small Persian manuscript figures with
 
 ## Notes
 
-- 2026-11-06: First appear together in 09.07. Keep the five robe colours in
-  09.08–09.09, including the returning flower-gatherers. A scene may show
+- 2026-11-06: First appear together in 08.08. Keep the five robe colours in
+  08.09–08.10, including the returning flower-gatherers. A scene may show
   fewer of them when a single messenger is the source's focus.

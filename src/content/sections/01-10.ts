@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.10 · آغاز کتاب → ستایش انوشه روان امیر منصور
- * Couplets: text/shahnameh.json, section 01.10 (pdf p40), unchanged.
+ * Couplets: text/chapters, section 01.10 (pdf p40), unchanged.
  * Paintings: art/prompts/01-10.md. Light layer reused from 01.01.
  */
 const art = sectionArt("01.10");

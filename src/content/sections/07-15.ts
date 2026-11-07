@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.15 · فریدون → آهنگ رزم منوچهر با سلو و تور
- * Couplets: text/shahnameh.json, section 07.15, unchanged.
+ * Couplets: text/chapters, section 07.15, unchanged.
  * Paintings: art/prompts/07-15.md. The host leaves the elm grove and arrays.
  */
 const art = sectionArt("07.15");

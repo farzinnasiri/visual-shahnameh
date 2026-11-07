@@ -14,7 +14,7 @@
     "setup": "pnpm install --frozen-lockfile && python3 -m venv .venv && .venv/bin/pip install -q pillow",
     "status": "node scripts/next_sections.mjs",
     "check:chapters": "node scripts/check_chapters.mjs",
-    "text:build": ".venv/bin/python -I scripts/build_text.py text/shahnameh-ferdowsi.pdf text/ && python3 -I scripts/build_toc.py text/shahnameh.json src/content/toc.json && node scripts/update_readme_contents.mjs && node scripts/check_chapters.mjs",
+    "text:build": ".venv/bin/python -I scripts/build_text.py text/shahnameh-ferdowsi.pdf text/ && python3 -I scripts/build_toc.py text/chapters src/content/toc.json && node scripts/update_readme_contents.mjs && node scripts/check_chapters.mjs",
     "check": "node scripts/check_section.mjs",
     "art:convert": ".venv/bin/python -I scripts/optimize_art.py",
     "art:upload": "node scripts/art_upload.mjs"

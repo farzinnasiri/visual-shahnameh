@@ -8,4 +8,4 @@ Mehrab, the adult king of Kabul, tall and broad-shouldered at small manuscript s
 
 ## Notes
 
-- 2026-11-06: 09.05–09.06 show his respectful visit to Zal's camp and his invitation. Do not move Zal into Mehrab's palace: Zal refuses that invitation in 09.06.
+- 2026-11-06: 08.06–08.07 show his respectful visit to Zal's camp and his invitation. Do not move Zal into Mehrab's palace: Zal refuses that invitation in 08.07.

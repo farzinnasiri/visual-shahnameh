@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.05 · آغاز کتاب → گفتار اندر آفرینش آفتاب
- * Couplets: text/shahnameh.json, section 01.05 (pdf p35), unchanged.
+ * Couplets: text/chapters, section 01.05 (pdf p35), unchanged.
  * Paintings: art/prompts/01-05.md. Light layer reused from 01.01.
  */
 const art = sectionArt("01.05");

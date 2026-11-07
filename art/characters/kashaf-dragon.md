@@ -1,6 +1,6 @@
 # Kashaf-rud dragon · اژدهای کشف‌رود
 
-The monster in Sam's remembered deed within his letter, 09.18. This is a
+The monster in Sam's remembered deed within his letter, 08.19. This is a
 retrospective, not a new dragon attacking during the embassy.
 
 ## Prompt line
@@ -9,5 +9,5 @@ The Kashaf-rud dragon is a long low Persian manuscript serpent, charcoal-lapis s
 
 ## Notes
 
-2026-11-06: 09.18 shows this creature only in Sam's account of his earlier
+2026-11-06: 08.19 shows this creature only in Sam's account of his earlier
 deed. Death is restrained: a still coiled body and lowered head, without gore.

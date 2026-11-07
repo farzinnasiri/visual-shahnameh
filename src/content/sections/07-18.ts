@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.18 · فریدون → درگذشتن فریدون
- * Couplets: text/shahnameh.json, section 07.18 (pdf p120), unchanged.
+ * Couplets: text/chapters, section 07.18 (pdf p120), unchanged.
  * Paintings: art/prompts/07-18.md. Light layer reused from 01.01.
  *
  * Eleven couplets, four scenes. The threshold is the failing plane tree

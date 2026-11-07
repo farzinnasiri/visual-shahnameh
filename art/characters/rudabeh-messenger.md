@@ -1,7 +1,7 @@
 # Rudabeh's messenger · پیام‌رسان رودابه
 
-The unnamed adult woman carrying messages between Zal and Rudabeh in 09.13.
-Her identity is not stated; this sheet keeps her 09.13 appearances consistent.
+The unnamed adult woman carrying messages between Zal and Rudabeh in 08.14.
+Her identity is not stated; this sheet keeps her 08.14 appearances consistent.
 She is distinct from Sindokht.
 
 ## Prompt line
@@ -10,5 +10,5 @@ An anonymous adult woman messenger at small Persian manuscript scale, with a nar
 
 ## Notes
 
-- 2026-11-06: 09.13 shows her delivery, interception, questioning and eventual
+- 2026-11-06: 08.14 shows her delivery, interception, questioning and eventual
   release. Distress is shown with restrained posture; no gore or humiliation.

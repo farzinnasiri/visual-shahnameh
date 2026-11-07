@@ -2,7 +2,7 @@
 
 Son of Tahmasp, king of chapter 10. His name appears in the chapter title as زوطهماسپ and in the section title as زوتهماسپ. Not Garshasp or Sam.
 
-First painted in: 12.01.
+First painted in: 10.01.
 
 ## Prompt line
 

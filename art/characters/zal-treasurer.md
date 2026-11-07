@@ -1,6 +1,6 @@
 # Zal's treasurer · گنجور زال
 
-The adult official who carries gifts and private messages in 09.08.
+The adult official who carries gifts and private messages in 08.09.
 
 ## Prompt line
 

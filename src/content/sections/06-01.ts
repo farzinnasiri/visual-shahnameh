@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.01 · ضحاک → پادشاهی ضحاک
- * Couplets: text/shahnameh.json, section 06.01, unchanged.
+ * Couplets: text/chapters, section 06.01, unchanged.
  * Paintings: art/prompts/06-01.md. Light layer reused from 01.01.
  */
 const art = sectionArt("06.01");

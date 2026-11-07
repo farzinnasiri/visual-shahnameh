@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.01 · آغاز کتاب → آغاز کتاب
- * Couplets: text/shahnameh.json, chapters[0].sections[0] (pdf p32), unchanged.
+ * Couplets: text/chapters, chapters[0].sections[0] (pdf p32), unchanged.
  * Paintings: art/prompts/01-01.md.
  */
 const art = sectionArt("01.01");

@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 01.11 · آغاز کتاب → گفتار اندر ستایش سلطان محمود
- * Couplets: text/shahnameh.json, section 01.11 (pdf p41), unchanged.
+ * Couplets: text/chapters, section 01.11 (pdf p41), unchanged.
  * Paintings: art/prompts/01-11.md. Light layer reused from 01.01.
  * The creator, Yazdan and Gabriel are never given a body: light, rain,
  * a river, an elephant. No prophet and no angel.

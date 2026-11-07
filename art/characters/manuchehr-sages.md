@@ -1,6 +1,6 @@
 # Manuchehr's questioning sages · موبدان پرسشگر منوچهر
 
-The three anonymous wise men who test Zal through riddles in 09.23. They
+The three anonymous wise men who test Zal through riddles in 08.24. They
 are human court scholars, distinct from Zal's own camp counsellors.
 
 ## Prompt line
@@ -9,6 +9,6 @@ Manuchehr's three questioning sages are tiny elderly manuscript men with thought
 
 ## Notes
 
-- 2026-11-06: Consolidated from the first reviewed 09.23 court draft before
+- 2026-11-06: Consolidated from the first reviewed 08.24 court draft before
   further generation. Its duplicate king and wrong royal beard were rejected;
   the three elders' robe colours and faces remain the reference.

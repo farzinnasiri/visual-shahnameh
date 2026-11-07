@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.02 · فریدون → فرستادن فریدون، جندل را به یمن
- * Couplets: text/shahnameh.json, section 07.02, unchanged.
+ * Couplets: text/chapters, section 07.02, unchanged.
  * Paintings: art/prompts/07-02.md. Light layer reused from 01.01.
  *
  * Sixty-nine couplets, fourteen scenes. Three cypresses open the

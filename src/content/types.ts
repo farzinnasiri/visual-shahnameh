@@ -3,7 +3,7 @@
  * each scene is one painting that the reader dives through, and it holds the
  * couplets read while that painting fills the screen.
  *
- * Ids follow text/shahnameh.json: chapter "01", section "01.01".
+ * Ids follow text/chapters: chapter "10", section "10.01".
  */
 
 import type { SceneSound } from "./sound";
@@ -47,7 +47,7 @@ export interface Section {
   id: string;
   chapter: SectionRef;
   title: string;
-  /** All couplets of the section, verbatim from text/shahnameh.json. */
+  /** All couplets of the section, verbatim from text/chapters/NN.json. */
   couplets: readonly Couplet[];
   /** scenes[0] is the threshold shown with the title; it has no couplets. */
   scenes: readonly Scene[];

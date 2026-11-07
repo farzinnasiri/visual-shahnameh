@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 02.01 · کیومرس → کیومرس
- * Couplets: text/shahnameh.json, section 02.01 (pdf p44), unchanged.
+ * Couplets: text/chapters, section 02.01 (pdf p44), unchanged.
  * Paintings: art/prompts/02-01.md. Light layer reused from 01.01.
  *
  * Seventy-two couplets, fourteen scenes. The threshold is the empty mountain.

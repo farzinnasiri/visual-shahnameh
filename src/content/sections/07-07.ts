@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.07 · فریدون → سخن گفتن فریدون با ایرج در باره کردار سلم و تور
- * Couplets: text/shahnameh.json, section 07.07, unchanged.
+ * Couplets: text/chapters, section 07.07, unchanged.
  * Paintings: art/prompts/07-07.md. Light layer reused from 01.01.
  */
 const art = sectionArt("07.07");

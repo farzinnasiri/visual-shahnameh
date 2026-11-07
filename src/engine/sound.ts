@@ -1,3 +1,4 @@
+import { scoreSeed } from "../content/score-seeds";
 import { ATMOSPHERES, resolveSound, type Atmosphere, type Cue, type CueSound, type Mode } from "../content/sound";
 import type { Section } from "../content/types";
 import { buildTimeline, type Timeline } from "./timeline";
@@ -16,7 +17,9 @@ import { clamp, progress, smoothstep } from "./util";
  *   the "radiance" atmosphere.
  *
  * Randomness comes from a generator seeded by the section id, so a section
- * read the same way plays the same music. `renderScore()` renders a whole
+ * read the same way plays the same music. Sections whose ids were aligned to
+ * their chapter keep the seed they were reviewed with (`scoreSeed`).
+ * `renderScore()` renders a whole
  * section offline to an AudioBuffer (scripts/listen.mjs writes it to a file).
  * sound/SOUND.md is the design guide.
  */
@@ -91,7 +94,7 @@ export class Sound {
   ) {
     this.scores = section.scenes.map((scene, i) => resolveSound(scene.sound, i === 0 ? "threshold" : "contemplative"));
     this.score = this.scores[0];
-    this.random = seeded(section.id);
+    this.random = seeded(scoreSeed[section.id] ?? section.id);
     document.addEventListener("visibilitychange", this.onVisibility);
   }
 
@@ -299,7 +302,7 @@ export class Sound {
     this.dry = gain(ctx, 1);
     this.dry.connect(this.master);
     this.reverb = ctx.createConvolver();
-    this.reverb.buffer = impulse(ctx, 4.2, seeded(`${this.section.id}/hall`));
+    this.reverb.buffer = impulse(ctx, 4.2, seeded(`${scoreSeed[this.section.id] ?? this.section.id}/hall`));
     this.reverb.connect(this.master);
 
     // Each voice has its own bus with a reverb send: [wet, level].
@@ -314,7 +317,7 @@ export class Sound {
     this.drumBus.connect(this.bus(0.3, 0.55));
     this.lowBus = this.bus(0.45, 1);
 
-    this.noise = noiseBuffer(ctx, 3, seeded(`${this.section.id}/noise`));
+    this.noise = noiseBuffer(ctx, 3, seeded(`${scoreSeed[this.section.id] ?? this.section.id}/noise`));
     this.neyWave = ctx.createPeriodicWave(new Float32Array(6), new Float32Array([0, 1, 0.32, 0.12, 0.05, 0.02]));
 
     // Drone: D2 body, D3 and A3 in slightly detuned pairs, D4 halo.

@@ -27,14 +27,13 @@ section end to end: `src/content/sections/02-01.ts` with
    fails, the section is taken: skip it.
 2. **Get the text:**
    ```sh
-   python3 -I -c "import json,sys;d=json.load(open('text/shahnameh.json'));s=[x for c in d['chapters'] for x in c['sections'] if x['id']==sys.argv[1]][0];print(s['title']);[print(i+1,a,'/',b) for i,(a,b) in enumerate(s['couplets'])]" <id>
+   python3 -I -c "import json,sys; cid,=sys.argv[1].split('.')[:1]; d=json.load(open(f'text/chapters/{cid}.json')); s=next(x for x in d['sections'] if x['id']==sys.argv[1]); print(d['id'], d['title']); print(s['title']); [print(i+1,a,'/',b) for i,(a,b) in enumerate(s['couplets'])]" <id>
    ```
    Read all of it. Read the previous section's file (if built) so your
    opening follows from its ending.
-   Find the enclosing chapter in this JSON and use its `id` and `title` for
-   the section's `chapter` field. There are 61 chapters. Section IDs remain
-   from the original PDF grouping: `09.01`, for example, now belongs to
-   chapter `08`. Never infer the chapter from a section's ID prefix.
+   The file is the chapter. Use its `id` and `title` for the section's
+   `chapter` field. There are 61 chapters. `09.01` is the first section of
+   chapter 09, in `text/chapters/09.json`. Do not open the PDF to choose a number.
 3. **Plan the arc.** Group couplets into scenes of about 3–6 that share one
    painting; `scenes[0]` is the threshold with no couplets. Paintings per
    section: about one per 3–6 couplets, at least 3, at most 40. The paintings

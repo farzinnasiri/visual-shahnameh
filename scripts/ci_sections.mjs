@@ -3,6 +3,32 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync } from 'node:fs';
 
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8' });
+
+// A painting's bytes never change. Moving a section's directory keeps the same
+// blob at the new path; editing or deleting a blob without that move does not.
+function changedPaintings(base, head) {
+  const raw = git('diff', '--no-renames', '--raw', '-z', base, head, '--', 'public/art/');
+  const parts = raw.split('\0').filter(Boolean);
+  const bad = [];
+  const removed = [];
+  const added = [];
+  for (let i = 0; i < parts.length;) {
+    const header = parts[i++].slice(1).split(' ');
+    const path = parts[i++];
+    const [oldBlob, newBlob, status] = [header[2], header[3], header[4]];
+    if (status.startsWith('M') || status.startsWith('T')) bad.push(path);
+    else if (status.startsWith('D')) removed.push(oldBlob);
+    else if (status.startsWith('A') || status.startsWith('C')) added.push(newBlob);
+  }
+  const pool = new Map();
+  for (const blob of added) pool.set(blob, (pool.get(blob) ?? 0) + 1);
+  for (const blob of removed) {
+    const count = pool.get(blob) ?? 0;
+    if (!count) bad.push(blob);
+    else pool.set(blob, count - 1);
+  }
+  return bad;
+}
 const head = process.env.HEAD_SHA || 'HEAD';
 let base = process.env.BASE_SHA;
 if (!base || /^0+$/.test(base)) {
@@ -10,7 +36,7 @@ if (!base || /^0+$/.test(base)) {
   catch { base = git('hash-object', '-t', 'tree', '--stdin').trim(); }
 }
 const files = git('diff', '--name-only', '-z', base, head).split('\0').filter(Boolean);
-const immutable = git('diff', '--no-renames', '--name-only', '--diff-filter=MD', '-z', base, head, '--', 'public/art/').split('\0').filter(Boolean);
+const immutable = changedPaintings(base, head);
 if (immutable.length) throw new Error(`Existing paintings are immutable; use new filenames: ${immutable.join(', ')}`);
 
 const ids = new Set();

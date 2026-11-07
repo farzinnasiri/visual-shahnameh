@@ -83,15 +83,11 @@ load cannot replace a newer destination. Critical artwork is decoded before
 mounting; navigation does not use full-page light flashes or shared-element
 view transitions.
 
-The book uses 61 chapter entries, defined by `text/chapter-map.json` and
-generated into the source and reader contents. Permanent section IDs come
-from the original PDF grouping. A section's parent is its enclosing chapter
-in the contents, never its ID prefix. Regrouping keeps section URLs, paintings
-and saved reading positions intact.
-When a wrapped PDF heading created a spurious empty section, source generation
-can join it to the adjacent text section without changing the latter's ID.
-`sectionAliases` in the generated contents redirects retired IDs to that
-canonical reading route. Aliases never appear as extra entries in the contents.
+The book is 61 chapter files in `text/chapters`. A section id is
+`chapter.place`, so `10.01` is the first section of chapter 10 and its route
+is `#/10.01`. Chapter 07 has no `07.13`: a wrapped heading was joined into
+`07.14`, and `sectionAliases` redirects `#/07.13` there. Aliases never appear
+as extra entries in the contents.
 
 ```
 threshold   →  dive  →  scene 1  →  dive  →  scene 2  → … →  last scene  →  ending
@@ -186,7 +182,7 @@ for `document.fonts.ready`.
 
 Text conventions:
 
-- Copy the poem's text **verbatim** from `text/shahnameh.json`, including its
+- Copy the poem's text **verbatim** from `text/chapters/NN.json`, including its
   spelling and ZWNJ (`نگارنده‌ی`).
 - All numerals shown to the reader are Persian (`toPersianDigits`).
 - Interface copy is short, plain Persian (for example «برای ورود، به پیش
@@ -286,7 +282,8 @@ src/engine/sound-toggle.ts  the «آوا» button and when sound may start
 src/styles/contents.css contents styles
 public/favicon.*        the شمسه icon (svg, ico, apple-touch-icon, 512px png)
 src/content/toc.json    the 61 chapters and their Persian section titles
-text/chapter-map.json   chapter organization and permanent source section ranges
+text/chapters/NN.json     one chapter: its sections, titles and couplets
+text/chapter-map.json   PDF rebuild map; not the published section numbers
 src/content/types.ts    Section / Scene / Couplet types: the content contract
 src/content/index.ts    discovers sections/*.ts (no list to edit), lazy imports
 src/content/sections/   one file per section, NN-NN.ts: couplets + scenes + sound

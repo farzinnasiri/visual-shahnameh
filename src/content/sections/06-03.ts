@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.03 · ضحاک → زادن فریدون از مادر
- * Couplets: text/shahnameh.json, section 06.03 (pdf p70), unchanged.
+ * Couplets: text/chapters, section 06.03 (pdf p70), unchanged.
  * Paintings: art/prompts/06-03.md. Light layer reused from 01.01.
  *
  * Forty-three couplets, eight scenes after an empty meadow. The child

@@ -5,7 +5,7 @@
 //   node scripts/check_section.mjs 03.01 [04.01 ...] [--quick] [--keep-frames]
 //
 // Checks (✗ = fails the section, ! = warning):
-//   text      couplets verbatim from text/shahnameh.json, every couplet in exactly one scene, in order
+//   text      couplets verbatim from text/chapters/NN.json, every couplet in exactly one scene, in order
 //   scenes    scenes[0] is the threshold (no couplets); every scene has a sound; painting budget
 //   art       every painting exists as public/art/<id>/*.avif, loads, is 1536x1024, under the size cap
 //   files     art/prompts/<id>.md, art/manifest-<id>.json, reports/<id>.md exist
@@ -23,6 +23,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, wri
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadBook } from "./book.mjs";
 
 const MAX_PAINTING_KB = 900;
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -32,7 +33,7 @@ if (!ids.length) {
   console.error("usage: node scripts/check_section.mjs <id> [<id>...] [--quick]");
   process.exit(2);
 }
-const book = JSON.parse(readFileSync(join(root, "text/shahnameh.json"), "utf8"));
+const book = loadBook(root);
 const source = Object.fromEntries(book.chapters.flatMap((c) => c.sections.map((s) => [s.id, s])));
 const sourceChapters = Object.fromEntries(book.chapters.flatMap(c => c.sections.map(s => [s.id, { id: c.id, title: c.title }])));
 
@@ -75,7 +76,7 @@ async function check(id) {
   };
 
   const src = source[id];
-  if (!src) return errors.push(`no section ${id} in text/shahnameh.json`), done();
+  if (!src) return errors.push(`no section ${id} in text/chapters`), done();
   const file = join(root, "src/content/sections", `${slug}.ts`);
   if (!existsSync(file)) return errors.push(`missing src/content/sections/${slug}.ts`), done();
   for (const f of [`art/prompts/${slug}.md`, `art/manifest-${slug}.json`, `reports/${slug}.md`]) {
@@ -134,13 +135,13 @@ async function check(id) {
   if (data.id !== id) errors.push(`section.id is "${data.id}", expected "${id}"`);
   const chapter = sourceChapters[id];
   if (data.chapter.id !== chapter.id || data.chapter.title !== chapter.title) {
-    errors.push(`chapter must match text/shahnameh.json: ${chapter.id} · ${chapter.title} (section prefixes are legacy IDs)`);
+    errors.push(`chapter must match text/chapters/${chapter.id}.json: ${chapter.id} · ${chapter.title}`);
   }
   const want = src.couplets;
   if (data.couplets.length !== want.length) errors.push(`has ${data.couplets.length} couplets, the text has ${want.length}`);
   want.forEach((c, i) => {
     const got = data.couplets[i];
-    if (got && (got[0] !== c[0] || got[1] !== c[1])) errors.push(`couplet ${i + 1} differs from text/shahnameh.json`);
+    if (got && (got[0] !== c[0] || got[1] !== c[1])) errors.push(`couplet ${i + 1} differs from text/chapters/${id.slice(0, 2)}.json`);
   });
   const order = data.scenes.flatMap((s) => s.couplets);
   if (order.join() !== want.map((_, i) => i + 1).join()) errors.push(`scene couplets must be 1..${want.length}, each once, in order (got ${order.join(",")})`);

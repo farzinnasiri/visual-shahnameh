@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.03 · فریدون → پاسخ دادن شاه یمن، جندل را
- * Couplets: text/shahnameh.json, section 07.03, unchanged.
+ * Couplets: text/chapters, section 07.03, unchanged.
  * Paintings: art/prompts/07-03.md. Light layer reused from 01.01.
  *
  * Thirty-six couplets, nine scenes. The barred door of Yemen opens.

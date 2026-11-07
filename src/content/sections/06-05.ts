@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.05 · ضحاک → داستان کاوه آهنگر با ضحاک
- * Couplets: text/shahnameh.json, section 06.05 (pdf p73), unchanged.
+ * Couplets: text/chapters, section 06.05 (pdf p73), unchanged.
  * Paintings: art/prompts/06-05.md. Light layer reused from 01.01.
  *
  * Eighty-six couplets, eighteen scenes after an empty throne. Kaveh

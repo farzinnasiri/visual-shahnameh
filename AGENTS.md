@@ -6,11 +6,13 @@ generative score. It is a static Vite + TypeScript site; paintings are
 served by Cloudflare Workers Static Assets in production; R2 is an optional
 future migration (`DEPLOY.md`).
 
-The book is organized into 61 chapters (داستان), following Ganjoor, with
-645 sections (بخش). `text/chapter-map.json` defines the grouping.
-Section IDs are permanent IDs from the original PDF extraction, so their
-prefix does not determine their current chapter. Look up the parent in
-`text/shahnameh.json`; never renumber section files or paintings.
+The book is 61 chapters (داستان), 645 sections (بخش). Each chapter is one
+file, `text/chapters/NN.json`, and that file is the text. A section id is
+`chapter.place`: `10.01` is the first section of chapter 10. The number
+before the dot is always the chapter. Chapter 07 has no `07.13`; that empty
+heading belongs to `07.14`, which redirects the old address. Copy the
+couplets from the chapter file. Name the section file, paintings, prompt,
+manifest and report with that same id.
 The unit of work is
 one **section**: its couplets, 3–40 paintings (about one per 3–6 couplets), a score. Many agents build
 sections in parallel; nothing they build touches a shared file.
@@ -25,7 +27,7 @@ Everything a builder needs is in this repo:
 
 | Need | Where |
 | --- | --- |
-| The full text (verbatim) | `text/shahnameh.json` (`text/README.md`) |
+| The full text (verbatim) | `text/chapters/NN.json` (`text/README.md`) |
 | What exists, what is next, claims | `node scripts/next_sections.mjs` |
 | Look, motion, architecture | `DESIGN.md` |
 | Painting rules and prompt template | `art/STYLE.md` |
@@ -124,8 +126,8 @@ Follow `docs/BUILDER_BRIEF.md`; it is the complete checklist. In short:
 - **Don't run `pnpm build` or `pnpm dev` during a parallel run.** Builds
   write the shared `dist/`, and dev servers collide on ports.
   `check_section.mjs` starts its own server.
-- **Text is verbatim** from `text/shahnameh.json`: spelling and ZWNJ
-  included. The check enforces it.
+- **Text is verbatim** from `text/chapters/NN.json`: spelling and ZWNJ
+  included. The check enforces it. The PDF is only for checking a doubtful line.
 - **Paintings are immutable.** Never overwrite a painting file that may
   already be uploaded; a redone painting gets a new name
   (`04-razm-2.avif`). That's what lets the CDN cache them forever.

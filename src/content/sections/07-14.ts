@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 07.14 · فریدون → آگاه شدن سلم و تور از پادشاهی منوچهر فرستادن پیام به نزد فریدون
- * Couplets: text/shahnameh.json, section 07.14, unchanged.
+ * Couplets: text/chapters, section 07.14, unchanged.
  * Paintings: art/prompts/07-14.md. One hundred and twenty-eight couplets.
  * The embassy leaves the East, stands under Fereydun's lamp, and rides back
  * into a march.

@@ -3,7 +3,7 @@ import type { Section } from "../types";
 
 /**
  * 06.04 · ضحاک → پژوهش فریدون از فرانک دریاره نژاد
- * Couplets: text/shahnameh.json, section 06.04 (pdf p71), unchanged.
+ * Couplets: text/chapters, section 06.04 (pdf p71), unchanged.
  * Paintings: art/prompts/06-04.md. Light layer reused from 01.01.
  *
  * Thirty-four couplets, seven scenes after the path down Alborz.

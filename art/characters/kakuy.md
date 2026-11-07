@@ -1,7 +1,7 @@
 # Kakuy · کاکوی
 
 The human warrior opposed to Sam in Sam's account of the earlier campaign,
-09.16. He is Salm's descendant, not Salm returned and not a supernatural div.
+08.17. He is Salm's descendant, not Salm returned and not a supernatural div.
 
 ## Prompt line
 
@@ -9,5 +9,5 @@ Kakuy, an adult human warrior at small Persian manuscript scale, with a broad ol
 
 ## Notes
 
-- 2026-11-06: 09.16 scenes showing him belong to Sam's narrated past campaign.
+- 2026-11-06: 08.17 scenes showing him belong to Sam's narrated past campaign.
   No gore; defeat is an unhorsed warrior or riderless horse.

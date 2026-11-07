@@ -28,7 +28,8 @@ The rules that matter most:
    changes key. Atmospheres change the mode, not the tonic.
 4. **Reproducible.** Randomness is seeded by the section id. The same section,
    read the same way, plays the same music, and `scripts/listen.mjs` renders it
-   identically every time.
+   identically every time. A section whose id was aligned to its chapter keeps
+   the seed it was reviewed with.
 
 ## How it follows the reader
 
