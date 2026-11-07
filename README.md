@@ -127,8 +127,8 @@ The `work/claims/` locks still coordinate agents sharing one checkout.
 
 ## Chapter checklist
 
-As of 2026-11-06, chapters 01–07 are complete through **07.18, درگذشتن فریدون**.
-The app includes **40 of 645 sections** and **1,983 couplets**, with paintings
+As of 2026-11-07, chapters 01–07 are complete through **07.18, درگذشتن فریدون**, and chapter 10, **پادشاهی زوطهماسپ**, is complete.
+The app includes **41 of 645 sections** and **2,028 couplets**, with paintings
 and generative music.
 Next: **09.01, داستان زال و رودابه**. Unchecked chapters remain to be illustrated and scored.
 
@@ -275,9 +275,9 @@ Checked items are complete. The full text is available in [Markdown](text/shahna
 </details>
 
 <details>
-<summary>○ 10 · پادشاهی زوطهماسپ (0/1 sections)</summary>
+<summary>✓ 10 · پادشاهی زوطهماسپ (1/1 sections)</summary>
 
-- [ ] 12.01 · پادشاهی زوتهماسپ
+- [x] [12.01 · پادشاهی زوتهماسپ](src/content/sections/12-01.ts)
 
 </details>
 
