@@ -128,10 +128,10 @@ The `work/claims/` locks still coordinate agents sharing one checkout.
 ## Chapter checklist
 
 As of 2026-11-07, chapters 01–07 are complete through **07.18, درگذشتن فریدون**.
-Chapter 08 is implemented through **09.31, اندرز کردن منوچهر**. The portrait
+Chapter 08 is implemented through **09.31, اندرز کردن منوچهر**, and chapter 10, **پادشاهی زوطهماسپ**, is complete. The portrait
 reader keeps the painting above its verses; validation is recorded in the
 [section reports](reports/).
-The app includes **71 of 645 sections** and **3,595 couplets**, with paintings
+The app includes **72 of 645 sections** and **3,640 couplets**, with paintings
 and generative music.
 Next: **10.01, پادشاهی نوذر**. Unchecked chapters remain to be illustrated and scored.
 
@@ -279,9 +279,9 @@ The full text is available in [Markdown](text/shahnameh.md),
 </details>
 
 <details>
-<summary>○ 10 · پادشاهی زوطهماسپ (0/1 sections)</summary>
+<summary>✓ 10 · پادشاهی زوطهماسپ (1/1 sections)</summary>
 
-- [ ] 12.01 · پادشاهی زوتهماسپ
+- [x] [12.01 · پادشاهی زوتهماسپ](src/content/sections/12-01.ts)
 
 </details>
 
