@@ -257,9 +257,9 @@ Checked items are complete. The full text is available in [Markdown](text/shahna
 </details>
 
 <details>
-<summary>○ 09 · پادشاهی نوذر (0/12 sections)</summary>
+<summary>○ 09 · پادشاهی نوذر (1/12 sections)</summary>
 
-- [ ] 10.01 · پادشاهی نوذر
+- [x] [10.01 · پادشاهی نوذر](src/content/sections/10-01.ts)
 - [ ] 10.02 · نامه نوشتن نوذر به نزدیک سام
 - [ ] 10.03 · آگاهی یافتن پشنگ از مرگ منوچهر
 - [ ] 10.04 · آمدن افراسیاب به ایرانزمین
