@@ -128,11 +128,12 @@ The `work/claims/` locks still coordinate agents sharing one checkout.
 
 ## Chapter checklist
 
-As of 2026-11-07, chapters 01–08 and 10 are complete: 01–07 through **07.18, درگذشتن فریدون**,
-chapter 08 through **08.32, اندرز کردن منوچهر**, and chapter 10, **پادشاهی زوطهماسپ** (`10.01`). The portrait
+As of 2026-11-08, chapters 01–08, 10, and 11 are complete: 01–07 through **07.18, درگذشتن فریدون**,
+chapter 08 through **08.32, اندرز کردن منوچهر**, chapter 10, **پادشاهی زوطهماسپ** (`10.01`),
+and chapter 11 through **11.06, آوردن رستم، کیقباد را از البرز کوه**. The portrait
 reader keeps the painting above its verses; validation is recorded in the
 [section reports](reports/).
-The app includes **72 of 645 sections** and **3,640 couplets**, with paintings
+The app includes **78 of 645 sections** and **3,846 couplets**, with paintings
 and generative music.
 Next: **09.01, پادشاهی نوذر**. Unchecked chapters remain to be illustrated and scored.
 
@@ -288,14 +289,14 @@ The [original PDF](text/shahnameh-ferdowsi.pdf) is a reference for checking a li
 </details>
 
 <details>
-<summary>○ 11 · پادشاهی گرشاسپ (0/6 sections)</summary>
+<summary>✓ 11 · پادشاهی گرشاسپ (6/6 sections)</summary>
 
-- [ ] 11.01 · پادشاهی گرشاسپ
-- [ ] 11.02 · لشکر کشیدن افراسیاب به ایران
-- [ ] 11.03 · سخن گفتن زال با رستم و جواب دادن زال را رستم
-- [ ] 11.04 · گرفتن رستم، رخش را
-- [ ] 11.05 · لشکر کشیدن زال سوی افراسیاب
-- [ ] 11.06 · آوردن رستم، کیقباد را از البرز کوه
+- [x] [11.01 · پادشاهی گرشاسپ](src/content/sections/11-01.ts)
+- [x] [11.02 · لشکر کشیدن افراسیاب به ایران](src/content/sections/11-02.ts)
+- [x] [11.03 · سخن گفتن زال با رستم و جواب دادن زال را رستم](src/content/sections/11-03.ts)
+- [x] [11.04 · گرفتن رستم، رخش را](src/content/sections/11-04.ts)
+- [x] [11.05 · لشکر کشیدن زال سوی افراسیاب](src/content/sections/11-05.ts)
+- [x] [11.06 · آوردن رستم، کیقباد را از البرز کوه](src/content/sections/11-06.ts)
 
 </details>
 
