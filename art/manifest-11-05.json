@@ -1,0 +1,67 @@
+[
+  {
+    "file": "00-kus.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: A silent drum and karnay beside a Zabul camp just before the army rises.\n\nCOMPOSITION: The one luminous doorway is small central campfire, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Silent drum, horn and central campfire; previewed in real 390×844 phone reader"
+  },
+  {
+    "file": "01-sepah-2.png",
+    "prompt": "Create one landscape Persian Shahnameh miniature painting of an army muster at dawn. Timurid–Safavid manuscript style, opaque mineral pigments and shell gold, flat stacked space, lapis sky, tiny gold stars, fine brush outlines and visible paper grain. At the center, eight-year-old Rostam, a broad but beardless human child in an ivory tunic and short vermilion coat, leads while riding Rakhsh. Rakhsh has a vivid saffron-gold coat with irregular red-roan patches, dark mane and tail. His elderly father Zal follows nearby: a clearly masculine lined face, very long pure-white hair, short white beard, turquoise coat over ivory. A dense but orderly Zabul army of small soldiers and banners fills the distance. A drum and long horn stand near the road. Keep the two named faces and Rakhsh visible together near the center of the painting; all figures are small manuscript scale. Full bleed, no border, text, letters, numerals, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Concise revision after Gemini could not fulfill the full first prompt"
+  },
+  {
+    "file": "02-bahar-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Shahnameh manuscript miniature of the spring march toward Ray. Opaque mineral pigments, shell gold, flat stacked space, fine outlines, lapis night sky and flowering trees. In the middle, young Rostam rides Rakhsh ahead of the Iranian host through a blossom meadow. Rostam is a broad but beardless eight-year-old human child with jaw-length black hair, ivory tunic and short vermilion coat. Rakhsh is vivid saffron-gold with large irregular red-roan rose patches, dark mane and tail. Farther across the meadow, the opposing Turanian host begins to assemble under Afrasiyab: a mature man with a stern face, short square black beard, dark indigo coat, narrow vermilion sash and low iron helmet, riding a plain dark horse. Both armies remain separated, no combat. Keep Rostam, Rakhsh and Afrasiyab visible in the middle of the composition as small complete manuscript figures. Full bleed, no text, letters, border, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Separate Iranian and Turanian hosts in blossom meadow"
+  },
+  {
+    "file": "03-ray-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature. Opaque mineral pigments and shell gold, flat stacked space, fine outlines, lapis night, visible paper grain. Near Ray, two distant armies halt on opposite sides of a meadow, leaving a clear empty space between them. In a central open command tent, elderly Zal speaks with a few seasoned Iranian counsellors about the need for a king. Zal is clearly masculine, with very long ivory-white hair, a short white beard, lined face and turquoise coat over ivory. The counsellors listen quietly; no fighting. The tent and named faces sit near the center, with the separated hosts small in the background. A small white-gold lamp glows in the center of the tent. Full-bleed landscape, no text, letters, numerals, border, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Zal and counsellors between two halted armies"
+  },
+  {
+    "file": "04-nishan-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature. Opaque mineral pigments and shell gold, flat stacked space, fine outlines, lapis night and visible paper grain. An elderly wise mobed in a plain ivory robe points from the central command tent toward an EMPTY Kayanian throne and a distant mountain path that will lead to Kay Qobad. Kay Qobad is not here and has not been enthroned. Elderly Zal listens beside the mobed: a clearly masculine lined face, very long ivory-white hair, short white beard, turquoise coat over ivory. Young Rostam, a broad but beardless eight-year-old child in a vermilion coat, stands nearby. Keep the mobed's hand, empty throne and listeners near the center at small complete manuscript scale; a small lamp lights the discussion. Full bleed, no text, letters, numerals, border, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Mobed indicates empty throne and mountain path; Kay Qobad absent"
+  }
+]
