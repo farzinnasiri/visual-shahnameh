@@ -1,0 +1,54 @@
+[
+  {
+    "file": "00-khaneh-2.png",
+    "prompt": "Create a NEW replacement painting for the quiet hall in Zabul. The prior result failed the story: it placed two people in a scene that must be EMPTY before Zal and Rostam enter. Make a Timurid–Safavid Persian Shahnameh manuscript miniature with opaque mineral pigments, shell gold, fine outlines, flat stacked space, visible paper grain, deep lapis night, turquoise tile, restrained vermilion, and no Western shading.\nSUBJECT: An EMPTY speaking hall in Zabul at night. NO PEOPLE, no human silhouettes, no horses, no faces. One unused iron mace leans against the exact central doorway beside a single small white-gold oil lamp. The mace and lamp are the only narrative objects. The doorway opens onto dark lapis night; ornamented walls and small cypress trees may fill the sides.\nCOMPOSITION: A distant complete architectural view, full bleed. The lamp flame is the brightest point at x=50%, y=50% of the source image. Keep the lamp and entire mace within the central 14% of image width, with the mace head above the phone title card at y=30%. No human figure anywhere. One coherent interior, no decorative text or labels. No letters, numerals, calligraphy, border, frame, margin, signature or watermark; no divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at the highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Empty hall replacement removed figures before the conversation; threshold previewed in real phone reader"
+  },
+  {
+    "file": "01-bim-3.png",
+    "prompt": "Make a NEW replacement of Zal warning young Rostam. The earlier images failed: first made Zal beardless, second placed both faces behind the real phone verse panel. Paint a distant Timurid–Safavid Shahnameh manuscript page, flat stacked space, deep lapis sky, opaque mineral pigments, shell gold, fine outlines, visible paper grain, no Western shading.\nSUBJECT: Elderly Zal, a clearly masculine father with long ivory-white hair, a short pure-white beard, lined face, turquoise coat over ivory and gently curved shoulders, warns his broad eight-year-old son Rostam that he is too young for battle. Rostam is a beardless CHILD with a round face, jaw-length black hair, ivory tunic and short vermilion coat. A small dark Turanian host is seen far beyond the palace. They speak, without fighting.\nCRITICAL ARCHITECTURE AND POSITION: Put Zal and Rostam side by side on a NARROW UPPER BALCONY at the TOP of a tall palace. They must occupy the UPPER QUARTER OF THE ENTIRE CANVAS, both complete small figures from head to foot. Both complete faces at x=47–53% width and y=16–19% of full source image; their hands at y=23–27%; feet no lower than y=34%. The lower TWO THIRDS of the canvas must be empty ornamented palace architecture, with a single white-gold lamp at x=50%, y=50% in a lower doorway. Keep the named figures within the narrow central 14% width for the phone crop. Do not put any face at y=35–65%; the phone's opaque verse card covers that area. One full-bleed image with no external border. No text, letters, numerals, calligraphy, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 3,
+    "notes": "Third attempt preserved elderly Zal and child Rostam on high balcony"
+  },
+  {
+    "file": "02-javab-2.png",
+    "prompt": "Paint a NEW Shahnameh miniature of Rostam's answer to Zal. Timurid–Safavid manuscript style, opaque mineral pigments and shell gold, deep lapis night, fine brush outlines, flat stacked space, visible paper grain, no Western shading.\nSUBJECT: Young Rostam answers his father with fierce but controlled resolve. Rostam is an unusually broad EIGHT-YEAR-OLD HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. His open human hands and long arms show confidence. Elderly Zal listens, a MAN with lined face, short pure-white beard, long ivory-white hair, gently bent shoulders and turquoise coat over ivory. No extra figures.\nCOMPOSITION: The two small complete figures stand side by side on an UPPER PALACE BALCONY at the TOP of a tall building, within the central 14% of canvas width. Both faces at y=16–20% of the whole image, Rostam's open hands at y=25–29%, feet at y=34% or higher. The lower two thirds is ornate architecture; one small white-gold lamp at x=50%, y=50% is the strongest light. This leaves all faces and action ABOVE the real phone verse card. Full-bleed landscape with no external border. No text, letters, numerals, calligraphy, inscription, watermark, signature, divine figure, modern object, gore, photography, 3D render or fantasy poster. One image, highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Revised concise prompt after a stalled generation returned no image"
+  },
+  {
+    "file": "03-asb-2.png",
+    "prompt": "Paint a NEW Timurid–Safavid Persian Shahnameh miniature: opaque mineral pigments and shell gold on burnished paper, deep lapis night, turquoise architecture, fine outlines, flat stacked space and visible paper grain, no Western shading.\nSUBJECT: Eight-year-old Rostam asks his father Zal for a mountain-strong horse and a massive mace. Rostam is a broad but human CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat with turquoise hem. Elderly Zal is a MAN with lined face, short pure-white beard, very long ivory-white hair, ivory tunic and turquoise champion's coat, gently bent shoulders. They speak near an EMPTY stable entrance; do not show Rakhsh yet. A large but plain mace leans near the stable, not raised.\nCOMPOSITION: Distant complete manuscript scene. Group both small full-body figures on a high stable gallery in the central 14% of image width, with their faces near y=20–25% of the whole image and their hands and the mace head above y=35%. The stable gate and ornament fill the lower canvas. A small white-gold lantern on the central gate is the single strongest light at x=50%, y=50%. Keep all faces and required action visible in a phone reader. Landscape full bleed for a central 3:2 crop. No text, letters, numerals, calligraphy, inscription, frame, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. One image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Stable gallery and plain mace, before Rakhsh appears"
+  }
+]

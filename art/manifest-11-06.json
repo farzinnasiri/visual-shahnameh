@@ -1,0 +1,262 @@
+[
+  {
+    "file": "00-alborz.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: The road from Iran to Alborz climbs under a lapis sky, with one unoccupied mountain seat glimpsed far beyond.\n\nCOMPOSITION: The one luminous doorway is small lamp at the start of the mountain path, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "01-farman.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: Zal charges young Rostam to bring Kay Qobad from Alborz quickly; a plain mace and the unclaimed crown lie near the father and son.\n\nCOMPOSITION: The one luminous doorway is lamp between Zal and Rostam, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nZal, son of Sam, a human of unusually fair skin, dark almond eyes with white eyelashes, vermilion lips and a straight nose. His hair is pure ivory-white from birth, never blond, silver-grey or dark. At infant age he is a small unarmed baby with a soft tuft of white hair; at youth age he is tall and broad-shouldered with a narrow waist, no beard and long white hair falling below his arms. In the nest his clothing is only a simple ivory wrap; after Sam clothes him he wears an ivory tunic beneath a turquoise champion's coat with a narrow gold belt. No halo, wings, claws or animal features. A crown or weapon appears only when the source scene grants it. All figures remain small and flat at Persian manuscript scale.\n\nRostam, son of Zal and Rudabeh, at small Persian manuscript scale: a broad round face with warm ivory skin, dark almond eyes, thick straight black eyebrows, a straight nose and closed vermilion lips. Black hair, never Zal's white hair. As a newborn he is an unusually large but unmistakable human infant, a soft black hair tuft and an ivory swaddle edged with a narrow vermilion band; no beard, crown, armour or weapon. At eight years he is a tall broad-shouldered CHILD, with round youthful cheeks, no beard or moustache, black hair to the jaw, an ivory tunic under a vermilion short coat with a narrow turquoise hem and a plain gold belt. A crown, shield or mace appears only when that scene's source grants it. Never an adult body, never a giant filling the frame; no tiger-skin helmet or Rakhsh before their later stories.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.\nPHONE READER PRIORITY: In the current 390×844 reader a central verse card covers much of the middle and lower painting. Keep every named human or horse face and the required action at x=43–57% of final image width and y=18–32% of final image height, above the verse card; keep complete small manuscript figures at no more than one fifth of frame height. The one central white-gold light remains near x=50%, y=50% below the faces. No separated principal figures or portrait close-ups.\n\nLATE-LIFE ZAL CONTINUITY: In this chapter Zal is an elderly man, never a woman or a youth. Give him a clearly masculine lined face, a short pure-white beard, and very long pure ivory-white hair. He wears the ivory tunic and turquoise champion’s coat from his sheet, with gently curved shoulders. Keep his complete face above the phone verse panel.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "02-talayeh-3.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh manuscript miniature. Opaque mineral pigments, shell gold, flat stacked space, fine outlines, lapis night and visible paper grain. Young Rostam rides Rakhsh through Turanian scouts; the scouts fall back, with no wounds. Rostam is an eight-year-old human CHILD with a round beardless face, jaw-length black hair, ivory tunic and short vermilion coat. He holds a plain ox-head mace. Rakhsh has a vivid saffron-gold coat with irregular red-roan patches and a dark mane and tail. In the narrow upper-center of the composition, show Rostam on Rakhsh FACING LEFT: place the horse's complete HEAD at x=45% of the whole source image and Rostam's complete FACE at x=53%, both at y=25%. Keep them tiny but distinct. Put all scouts behind them in the distant right background, so only Rostam and Rakhsh are needed in the central phone crop. A tiny white-gold glint on the mace is the brightest point at the exact center. Full bleed, no border, text, lettering, numerals, signature, photorealism, modern object or gore. Generate one image at the highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 3,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "03-qolon-2.png",
+    "prompt": "One full-bleed landscape Timurid–Safavid Shahnameh manuscript miniature in flat mineral pigments and shell gold, fine outlines, lapis sky and visible paper grain. Afrasiyab, king of Turan, gives an order to his captain Qolon before Qolon departs to block the mountain road. Afrasiyab is a mature stern man with short square black beard, indigo coat, vermilion sash and low iron helmet. Qolon is a lean man with thin moustache and pointed beard, dark malachite lamellar armor, indigo short cloak, plain iron cap and a long spear. Put BOTH small standing figures shoulder-to-shoulder in a narrow command balcony at the exact horizontal center. Afrasiyab's face at x=47%, Qolon's at x=53%, both y=22% of the source image; their hands and spear point at y=30%. The lower two-thirds is ornate Turanian camp architecture. A small central oil lamp at x=50%, y=50% is the brightest point. Riders and elephants appear as tiny background details on the sides. No horses in the foreground. No text, letters, numerals, border, signature, gore, modern object or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "04-chaman-2.png",
+    "prompt": "Create one full-bleed landscape Timurid–Safavid Shahnameh miniature of Rostam arriving at a quiet meadow near Mount Alborz. Opaque mineral pigments, shell gold, flat stacked space, fine outlines, lapis night sky, cypress and plane trees, running water, visible paper grain. ONLY young Rostam and his horse Rakhsh are in the foreground; no prince, host, court, throne, banquet or meeting yet. Rostam is a broad but beardless eight-year-old human child in ivory tunic and short vermilion coat. Rakhsh is saffron-gold with irregular red-roan patches and dark mane. Place Rostam and Rakhsh together as small manuscript figures near the exact center; Rostam's face x=48% and Rakhsh's complete head x=54%, both in the upper third of source image. A small white-gold water glint at the exact center is the brightest point. The meadow and mountain path fill the sides. No border, frame, text, letters, numerals, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "05-mehman-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Shahnameh manuscript miniature in flat mineral pigments, shell gold, lapis night, fine outlines and paper grain. At an Alborz meadow, companions of a young prince welcome eight-year-old Rostam to a simple outdoor feast, but Rostam politely says he must continue his urgent journey. Rostam has a round beardless child face, black jaw-length hair and short vermilion coat over ivory. The welcoming host is young Kay Qobad, a beardless prince with dark hair, ivory robe and restrained turquoise trim; do not show a crown or throne and do not reveal his identity through royal regalia. Put ONLY Rostam and the host as small complete figures on a narrow upper terrace at the exact horizontal center, their faces x=47% and x=53%, y=22% of source image, their greeting hands near y=30%. Other companions and a modest feast appear only as tiny details behind them. A small lamp at x=50%, y=50% is the brightest point. Full bleed, no border, text, letters, numerals, signature, modern objects, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "06-neshan-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh miniature, opaque mineral pigments and shell gold on paper, flat stacked space, fine outlines, lapis night, flowering meadow. Young Rostam asks the young host where Kay Qobad may be found; the host listens without revealing that he is Kay Qobad. Rostam is a broad beardless eight-year-old child with black jaw-length hair, ivory tunic and vermilion coat. The host is a beardless young man in a plain ivory robe with turquoise trim, no crown. Put ONLY these two small complete figures side by side in the exact central upper strip, Rostam's face x=47% and the host's face x=53%, both y=22% of source image, their conversational hands y=30%. A tiny white-gold lamp below their hands at x=50%, y=50% is brightest. Companions, tents and horses are distant side details. Full bleed; no border, text, lettering, numerals, signature, photorealism, modern object or gore. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "07-jam-2.png",
+    "prompt": "Create one full-bleed landscape Timurid–Safavid Shahnameh manuscript miniature, flat mineral pigments and shell gold, fine outlines, lapis night, visible paper grain. At a clear stream in an Alborz meadow, eight-year-old Rostam has just DISMOUNTED Rakhsh. Show Rostam standing beside the horse and touching its reins, with both feet on the ground. Rakhsh is a saffron-gold horse with irregular red-roan patches and dark mane, standing calmly beside the running water. Rostam has a round beardless child face, black jaw-length hair, ivory tunic and short vermilion coat. Put Rostam and Rakhsh as small complete figures close together at the upper center, Rostam face x=48%, horse head x=54%, both y=24% of source image. The stream passes below them, with a tiny white-gold reflection at exact center. No other foreground people, feast, cups, throne, border, text, letters, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "08-payam-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh manuscript miniature in flat mineral pigments and shell gold, fine outlines, lapis night, flowering Alborz meadow, visible paper grain. Eight-year-old Rostam delivers Zal's urgent message to the young host: the Iranian throne is prepared and the nobles seek Kay Qobad. Rostam is a broad but beardless human child with black jaw-length hair, ivory tunic and short vermilion coat. The host is a beardless young man in a plain ivory robe with turquoise trim, without crown or throne; Rostam does not yet know who he is. Show ONLY these two figures, small and complete, together on a narrow upper terrace at exact center: Rostam face x=47%, host face x=53%, both y=22% of source image; Rostam gestures with open hand near y=30%. A tiny lamp at x=50%, y=50% is brightest. No horses anywhere. Full bleed, no border, text, letters, numerals, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "09-davat-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh miniature, flat mineral pigments and shell gold, lapis night, fine outlines and paper grain. In the Alborz meadow, Rostam repeats Zal's summons and asks the young host to guide him to Kay Qobad. Rostam still does not know that the host IS Kay Qobad. Rostam is a beardless eight-year-old child with black hair and vermilion short coat over ivory. The host is a beardless young man in plain ivory with turquoise trim, without crown or throne. Put ONLY these two small complete figures close side by side on an upper terrace at the exact center, Rostam's face at x=47%, host's at x=53%, both y=22%; Rostam points toward a distant mountain road with one hand at y=30%. A tiny central lamp below at x=50%, y=50% is brightest. No foreground horses or companions. Full bleed, no border, text, lettering, numerals, signature, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "10-ashkar-2.png",
+    "prompt": "One full-bleed landscape Timurid–Safavid Shahnameh miniature, flat mineral pigments and shell gold, lapis night, fine outlines, paper grain. In an Alborz meadow, the young host smiles and reveals to eight-year-old Rostam that he is Kay Qobad. Kay Qobad is a YOUNG BEARDLESS human prince with dark hair and a plain ivory robe edged turquoise; no crown, halo, glowing disc or throne. Rostam is a beardless CHILD with black jaw-length hair, ivory tunic and vermilion coat, bowing his head in surprise. Put ONLY these two small complete figures shoulder-to-shoulder at the exact upper center, Kay Qobad face x=53%, Rostam face x=47%, both y=22% of source image, Rostam's gesture y=30%. A small white-gold lamp below at x=50%, y=50% is brightest. No foreground horses or companions. Full bleed; no border, text, letters, numerals, signature, halo, modern object, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "11-dorud-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh miniature, flat mineral pigments and shell gold, lapis night, fine outlines, paper grain. In an Alborz meadow, eight-year-old Rostam offers blessings for Kay Qobad's future kingship and conveys Zal's greeting. Rostam is a beardless child with black jaw-length hair, ivory tunic and vermilion short coat. Kay Qobad is a young beardless human prince with dark hair and plain ivory robe trimmed turquoise, no crown or halo. Put both small complete figures close at exact upper center, Rostam face x=47%, Qobad face x=53%, both y=22% of source; Rostam's respectful open hands at y=30%. The prince listens calmly. A tiny white-gold lamp at x=50%, y=50% is brightest. Distant meadow and tents on sides. No horses, throne, border, text, letters, numerals, signature, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "12-shadi-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh miniature, flat mineral pigments and shell gold, lapis night, fine outlines, paper grain. Kay Qobad rises from a simple meadow seat and accepts Rostam's summons to Iran as Rostam finishes Zal's message. Kay Qobad is a young beardless human prince with dark hair, plain ivory robe with turquoise trim, no crown or halo. Rostam is a broad beardless eight-year-old child with black jaw-length hair, ivory tunic and vermilion short coat. Show Qobad STANDING UP beside Rostam on a narrow upper terrace, both small complete figures at exact horizontal center, faces x=47% and x=53%, y=22% of source, raised hands y=30%. A tiny white-gold lamp below at x=50%, y=50% is brightest. No throne, horses, border, text, letters, numerals, signature, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "13-bazm-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh manuscript miniature, flat mineral pigments and shell gold, lapis night, fine outlines, paper grain. In the Alborz meadow, young Kay Qobad and eight-year-old Rostam share a small cup of wine while distant musicians begin a restrained celebration. Qobad is a young beardless man in a plain ivory robe edged turquoise, no crown or halo. Rostam is a beardless child with black jaw-length hair, ivory tunic and vermilion coat. Put both small complete figures close together on an upper meadow terrace at exact center, faces x=47% and x=53%, y=22% of source, the shared cup at x=50%, y=30%. Tiny musicians and companions only in the distant side background. A tiny white-gold lamp below x=50%, y=50% is brightest. No throne, horses, border, text, letters, numerals, signature, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review"
+  },
+  {
+    "file": "14-khab-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh manuscript miniature, flat mineral pigments and shell gold, deep lapis night, fine outlines, paper grain. Young Kay Qobad tells Rostam a dream: TWO WHITE FALCONS from Iran gently place a luminous CROWN above Qobad's head. Put the dream as a small cloud vignette in the upper center, clearly separate from the earthly meadow. Below it, Qobad and Rostam are small complete figures close together at the center, faces x=47% and x=53%, y=25% of source. Qobad is a beardless young man in plain ivory robe edged turquoise, with NO real crown or halo. Rostam is a beardless eight-year-old child in vermilion short coat and ivory. Two falcons and one dream crown only; no divine figures. A tiny white-gold lamp at x=50%, y=50% is brightest. Full bleed, no border, text, letters, numerals, signature, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review; phone-center composition"
+  },
+  {
+    "file": "15-bargasht-2.png",
+    "prompt": "One landscape Timurid–Safavid Shahnameh manuscript miniature, flat mineral pigments and shell gold, lapis night, fine outlines, paper grain. Rostam interprets Kay Qobad's dream and they set out for Iran, riding together from the Alborz meadow. Rostam is a beardless eight-year-old child with black jaw-length hair and vermilion short coat, riding RAKHSH: a vivid saffron-gold horse with irregular red-roan patches, dark mane and tail. Young beardless Kay Qobad wears a plain ivory robe edged turquoise and rides a plain BAY horse. Put the two riders and BOTH horse heads very close together in the narrow central upper strip: Rostam face x=47%, Qobad face x=53%, Rakhsh head x=45%, bay head x=55%, all visible above y=35% of source image. A tiny white-gold star at exact center is brightest. Other landscape on sides. No crown, halo, border, text, letters, numerals, signature, gore or photorealism. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Approved after visual review; phone-center composition"
+  },
+  {
+    "file": "16-rahband-4.png",
+    "prompt": "NEW composition for a Shahnameh mountain roadblock miniature, Timurid–Safavid flat mineral pigments, shell gold, lapis sky, delicate outlines, paper grain. The phone shows ONLY the CENTRAL 27 PERCENT of this landscape image, so put the entire narrative INSIDE A VERY NARROW CENTRAL VERTICAL COLUMN. A narrow mountain pass viewed straight on. At image x=50%, y=20%, three tiny complete riders are grouped shoulder-to-shoulder, overlapping horses: left Rostam, beardless child in vermilion on golden red-roan Rakhsh; middle Qobad, beardless youth in ivory on bay horse; right Qolon, moustached soldier in green armor and iron cap on dark horse, raising a blocking hand. Their three heads form one tight cluster within x=47–53%, y=18–23%; all horse heads within x=45–55%, y=25–30%. No character outside this cluster. They are stopping before combat. Wide EMPTY rock and trees on both sides and below. Tiny white-gold light at exact image center. No text, border, blood, photorealism. One landscape painting, highest resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 3,
+    "notes": "Third submitted attempt centered Qolon, Rostam, Qobad and Rakhsh for phone crop; earlier results rejected."
+  },
+  {
+    "file": "17-razm-3.png",
+    "prompt": "NEW replacement Shahnameh miniature. Previous result failed: Qolon was still mounted and added a crowned rider. Show ONLY TWO riders and TWO horses, no third person, no crown. Timurid–Safavid flat manuscript style, mineral pigments and shell gold, lapis night, fine outlines, paper grain. At the exact upper center of the image, eight-year-old beardless Rostam in a vermilion coat rides golden red-roan Rakhsh and has seized the spear of Qolon. Qolon is a moustached adult captain in dark green armor and plain iron cap. At this precise moment QOLON IS OFF HIS DARK HORSE, suspended briefly in a stylized, bloodless lift by the spear shaft. His horse remains behind. Group Rostam face, Qolon face, Rakhsh head and lifted spear within x=43–57% of the WHOLE landscape source, y=18–35%. Small complete figures; both faces clearly above the phone verse card. Wide empty rock and cypress at sides, tiny white-gold point at exact center. No other humans, crown, blood, injury, text, border or photorealism. One landscape image, highest resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Second submitted attempt showed Qolon lifted from his horse, without the extra crowned rider in the rejected first result."
+  },
+  {
+    "file": "18-rasidan-3.png",
+    "prompt": "NEW replacement Shahnameh miniature: the prior river scene put the two main faces outside the narrow phone crop and duplicated Rakhsh. Paint a flat Timurid–Safavid manuscript landscape with mineral pigments, shell gold, deep lapis night, fine outlines and paper grain. Beside a stream, Rostam and young Kay Qobad prepare a plain royal robe and small crown after the Turanian patrol has fled. ONLY these TWO people and ONE horse appear. Rostam is a beardless eight-year-old child in vermilion. Qobad is a beardless young man in plain ivory with turquoise trim. They are small complete figures standing very close on a HIGH CENTRAL ROCK LEDGE at the exact middle of the image: BOTH FACES x=47–53% and y=18–23% of the whole landscape; their hands, robe and crown x=46–54%, y=25–30%. One saffron-gold red-roan horse Rakhsh stands immediately behind, head x=50%, y=27%. No duplicated horse. The lower two thirds contains only rocks, stream and tiny white-gold reflection at exact center. No enthronement, blood, lettering, border or photorealism. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Second submitted attempt centered the two figures and removed a duplicated Rakhsh."
+  },
+  {
+    "file": "19-takht-2.png",
+    "prompt": "One landscape Timurid–Safavid Persian Shahnameh manuscript miniature, flat mineral pigments, shell gold, lapis night, fine outlines and paper grain. At night Rostam brings young Kay Qobad to elderly Zal in a quiet palace hall. Zal is unmistakably a man: very long pure ivory-white hair, short pure-white beard, lined face, turquoise coat over ivory. Rostam is a beardless eight-year-old child with black hair and vermilion coat. Qobad is a beardless young man in ivory with turquoise trim. The three small complete figures meet in a tight cluster on an UPPER CENTRAL GALLERY, all faces x=46–54% of the whole image and y=18–25%, hands y=27–32%, above the phone verse panel. Below them is a plain EMPTY ivory throne with a restrained crown suspended above it, prepared but not yet occupied. Small white-gold palace lamp at exact image center, strongest light. Side architecture may fill the frame. No coronation underway, no extra people in foreground, no writing, border, divine figure or photorealism. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "First submitted concise prompt; three faces and the prepared empty throne visible."
+  }
+]

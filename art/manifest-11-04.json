@@ -1,0 +1,119 @@
+[
+  {
+    "file": "00-astabl.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: An open stable gate and patterned pastures at night, before the horse search begins.\n\nCOMPOSITION: The one luminous doorway is small stable lantern, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Opening stable gate; previewed in real 390×844 phone reader"
+  },
+  {
+    "file": "01-azmayesh-2.png",
+    "prompt": "Create a NEW Timurid–Safavid Shahnameh miniature painting in mineral pigments and shell gold on burnished paper. Fine outlines, flat stacked space, lapis night, turquoise and malachite pasture, no Western shading.\nSUBJECT: In a peaceful royal stable yard, young Rostam evaluates several healthy horses before a journey. He is an eight-year-old human child, broad for his age, with a round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. He lays one open hand lightly on the back of a calm standing horse while more horses wait nearby. Every horse is unharmed and upright; this is a quiet examination, with no distress, injury or fighting. Rakhsh does not appear yet.\nCOMPOSITION: A distant complete manuscript scene with Rostam and the central horse together in the middle quarter of a full-bleed landscape frame. Keep his face, hand and the horse's head visible above the reader's verse area. A single white-gold stable lamp at x=50%, y=50% is the brightest point. No extra foreground people. No text, letters, numerals, calligraphy, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Humane revised prompt after Gemini declined first horse-testing request"
+  },
+  {
+    "file": "02-koreh-2.png",
+    "prompt": "Create one 4:3 landscape Persian Shahnameh miniature painting of two horses in a peaceful royal pasture at night. Timurid–Safavid manuscript style, flat stacked space, opaque mineral pigments, shell gold, lapis sky, fine brush outlines and visible paper grain.\nA pale ivory-white adult mare stands beside her young foal Rakhsh. The mare has a cream mane, broad chest, black eyes and short sturdy legs. Rakhsh is distinctly smaller, with a warm saffron-gold coat, irregular red-roan rose patches, dark mane and tail, black eyes, and dark hooves. They stand together near a tiny central white-gold lantern. No humans, saddle or reins. Keep both horse heads and the patterned foal in the middle of the image. Full bleed, no border, no text or lettering, no signature or watermark, no photorealism or 3D. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Concise revised prompt after Gemini returned no image"
+  },
+  {
+    "file": "03-chupan-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature painting. Opaque mineral pigments and shell gold on burnished paper, fine outlines, flat stacked space, deep lapis night, turquoise and malachite landscape, visible paper grain; no Western shading. Figures are small complete manuscript figures in a distant view. SUBJECT: Rostam notices the unusual foal in a royal pasture, and an elderly shepherd gently warns him that the mare is protective. Show Rostam and the shepherd talking near the two healthy horses; all calm, no struggle. CHARACTERS: Rostam is a broad but unmistakably eight-year-old HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. Rakhsh is a young saffron-gold red-roan horse with irregular rose patches, dark mane and tail, black eyes and dark hooves; no wings or stripes. His mother is a larger pale ivory-white mare with cream mane, broad chest and black eyes. An elderly shepherd has a weathered face, short white beard, muted malachite robe and plain dark cap. COMPOSITION: Keep named faces and the required action near the center, visible in a phone reader. One small white-gold lamp at the exact image center is the strongest light. Full-bleed landscape, no text, letters, numerals, calligraphy, inscription, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Shepherd and Rostam with the mare and Rakhsh"
+  },
+  {
+    "file": "04-nam-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature painting. Opaque mineral pigments and shell gold on burnished paper, fine outlines, flat stacked space, deep lapis night, turquoise and malachite landscape, visible paper grain; no Western shading. Figures are small complete manuscript figures in a distant view. SUBJECT: The shepherd tells Rostam that the saffron-gold red-roan foal is called Rakhsh and indicates the pale protective mare beside him. Show a calm conversation and the pair of horses in the pasture. CHARACTERS: Rostam is a broad but unmistakably eight-year-old HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. Rakhsh is a young saffron-gold red-roan horse with irregular rose patches, dark mane and tail, black eyes and dark hooves; no wings or stripes. His mother is a larger pale ivory-white mare with cream mane, broad chest and black eyes. An elderly shepherd has a weathered face, short white beard, muted malachite robe and plain dark cap. COMPOSITION: Keep named faces and the required action near the center, visible in a phone reader. One small white-gold lamp at the exact image center is the strongest light. Full-bleed landscape, no text, letters, numerals, calligraphy, inscription, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Rakhsh named in the pasture"
+  },
+  {
+    "file": "05-kamand-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature painting. Opaque mineral pigments and shell gold on burnished paper, fine outlines, flat stacked space, deep lapis night, turquoise and malachite landscape, visible paper grain; no Western shading. Figures are small complete manuscript figures in a distant view. SUBJECT: Rostam gently casts a plain rope lasso around Rakhsh in the royal pasture. The horse stands calmly and unharmed, with the protective pale mare in the background. CHARACTERS: Rostam is a broad but unmistakably eight-year-old HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. Rakhsh is a young saffron-gold red-roan horse with irregular rose patches, dark mane and tail, black eyes and dark hooves; no wings or stripes. His mother is a larger pale ivory-white mare with cream mane, broad chest and black eyes. COMPOSITION: Keep named faces and the required action near the center, visible in a phone reader. One small white-gold lamp at the exact image center is the strongest light. Full-bleed landscape, no text, letters, numerals, calligraphy, inscription, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Calm lasso action"
+  },
+  {
+    "file": "06-zur-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature painting. Opaque mineral pigments and shell gold on burnished paper, fine outlines, flat stacked space, deep lapis night, turquoise and malachite landscape, visible paper grain; no Western shading. Figures are small complete manuscript figures in a distant view. SUBJECT: Rostam lays one open hand lightly on Rakhsh’s back to test the horse’s strength; the horse stands upright, healthy and calm. A peaceful royal pasture surrounds them. CHARACTERS: Rostam is a broad but unmistakably eight-year-old HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. Rakhsh is a young saffron-gold red-roan horse with irregular rose patches, dark mane and tail, black eyes and dark hooves; no wings or stripes. COMPOSITION: Keep named faces and the required action near the center, visible in a phone reader. One small white-gold lamp at the exact image center is the strongest light. Full-bleed landscape, no text, letters, numerals, calligraphy, inscription, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Rostam tests Rakhsh with one hand"
+  },
+  {
+    "file": "07-baha-2.png",
+    "prompt": "Create one landscape Timurid–Safavid Persian Shahnameh miniature painting. Opaque mineral pigments and shell gold on burnished paper, fine outlines, flat stacked space, deep lapis night, turquoise and malachite landscape, visible paper grain; no Western shading. Figures are small complete manuscript figures in a distant view. SUBJECT: The elderly shepherd tells Rostam that the value of Rakhsh is the safety of Iran. Rostam smiles beside the young patterned horse. Keep their conversation and the horse visible together. CHARACTERS: Rostam is a broad but unmistakably eight-year-old HUMAN CHILD with round beardless face, jaw-length black hair, ivory tunic and short vermilion coat edged turquoise. Rakhsh is a young saffron-gold red-roan horse with irregular rose patches, dark mane and tail, black eyes and dark hooves; no wings or stripes. An elderly shepherd has a weathered face, short white beard, muted malachite robe and plain dark cap. COMPOSITION: Keep named faces and the required action near the center, visible in a phone reader. One small white-gold lamp at the exact image center is the strongest light. Full-bleed landscape, no text, letters, numerals, calligraphy, inscription, border, margin, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Shepherd declares the price as Iran"
+  },
+  {
+    "file": "08-zin-3.png",
+    "prompt": "Make a NEW replacement Shahnameh miniature of Rostam saddling Rakhsh. The prior result is unusable because it made Rakhsh a solid dark-brown horse. Rakhsh MUST look like the same horse in the earlier pasture scenes: a vivid SAFFRON-GOLD coat covered in large irregular RED-ROAN rose patches, dark mane and tail, dark hooves. His patterned golden body must be unmistakable and clearly visible. No solid brown or white horse.\n\nTimurid–Safavid Persian manuscript style, opaque mineral pigments and shell gold, deep lapis night, fine outlines, flat stacked space, ornamental stable architecture, visible paper grain. Eight-year-old Rostam is a broad but human child with a beardless round face, jaw-length black hair, ivory tunic and vermilion coat. He places a plain ivory saddlecloth edged turquoise on Rakhsh. Elderly Zal with long white hair, short white beard and turquoise coat waits at the stable gate. Keep the complete small figures and Rakhsh together in the center of a landscape full-bleed composition. No text, border, signature, modern object, gore or photorealism. One image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Replacement corrected a rejected solid-brown Rakhsh"
+  }
+]

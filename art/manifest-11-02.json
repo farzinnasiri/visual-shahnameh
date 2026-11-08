@@ -1,0 +1,80 @@
+[
+  {
+    "file": "00-jeyhun.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: The Jeyhun at night under a low gold rosette sky; an empty river crossing waits for the host.\n\nCOMPOSITION: The one luminous doorway is one lamp on the central bank, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Threshold previewed in real 390×844 reader at beats 0 and 0.6"
+  },
+  {
+    "file": "01-farman-2.png",
+    "prompt": "Create a NEW replacement for the immediately preceding Turanian host painting. The first image failed the real 390×844 phone crop because Afrasiyab was far to the left and an unnamed messenger filled the centre. Keep the exact Timurid–Safavid miniature style, deep lapis night, mineral pigments, gold, flat manuscript space and paper grain.\nSUBJECT: Afrasiyab, king of Turan, receives Pashang's hard message and commands the Turanian host across the Jeyhun. Show Afrasiyab ALONE as the named foreground figure on his dark horse, with a sealed but UNWRITTEN message in his left hand and his right hand pointing east. The host and river are small background detail; Pashang and any messenger are NOT visible.\nCHARACTER: Afrasiyab is a broad-shouldered mature man at small Persian manuscript scale. Long stern face, dark almond eyes under heavy black brows, straight hooked nose, short square black beard; dark indigo coat, narrow vermilion sash, black mail, low iron helmet with one small dark-gold disc, plain dark horse, short steel mace. No tall crown, horns, monster features or halo.\nCOMPOSITION: Put Afrasiyab's COMPLETE FACE, upper body, message and pointing hand in the exact centre column, x=45–55% of source width. His face is at x=50%, y=39%; his hands at x=50%, y=48%. A single small white-gold river lantern is at x=50%, y=55%, the strongest light. The 3:2 final composition is full bleed; the source may be 4:3. Keep the centre safe for a narrow phone crop and avoid the lower verse panel. No other foreground person. Absolutely no text, letters, numerals, inscription, watermark, signature, external border or margin. No divine figures, modern objects, gore, photograph, 3D render or fantasy poster. Generate one image at highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "First image placed Afrasiyab outside phone crop; second keeps face and message visible"
+  },
+  {
+    "file": "02-zabol-3.png",
+    "prompt": "Create a NEW replacement for the Zabul court painting. The previous result failed miniature scale: it made Zal a giant close-up portrait filling almost the whole picture, and the message was cropped on a phone. The art must look like a distant Timurid–Safavid Shahnameh manuscript page, with flat stacked space, lapis night, mineral pigments, shell gold, fine outlines, visible paper grain.\nSUBJECT: Alarm reaches Zal in Zabul; he receives a sealed UNWRITTEN message from tiny envoys while Turanian dust approaches beyond the palace arch. Elderly Zal has very long pure ivory-white hair, a lined face, dark almond eyes, short white beard, ivory tunic and turquoise champion's coat with narrow gold belt. No wings, halo or crown.\nCOMPOSITION: Show Zal as a SMALL FULL-BODY FIGURE, only 18% OF THE ENTIRE CANVAS HEIGHT, placed on the exact vertical middle line. His complete figure, face, both hands, and the blank message are within x=43–57% of image width and y=36–65% height. One tiny white-gold court lamp directly between his hands at x=50%, y=50% is the strongest light. The envoys are even smaller and peripheral. WIDE DISTANT VIEW, never a portrait, close-up or giant person. The 3:2 final crop is full bleed; 4:3 source is fine. No text, letters, numerals, calligraphy, inscriptions, border, frame, margin, signature or watermark. No divine figure, modern object, photograph, 3D render, fantasy poster or gore. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 3,
+    "notes": "First image placed Zal outside phone crop; second was an oversized portrait; third retains small central figures and message"
+  },
+  {
+    "file": "03-piri.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat and Tabriz workshops, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine single-hair brushwork, flat stacked space with a high horizon and no Western shading. Deep lapis-lazuli and ultramarine night, glowing gold leaf, restrained vermilion, malachite, turquoise, saffron and ivory. Visible paper grain, slight gold craquelure, pigment pooling at its edges. Gold chi clouds, spongy coloured rocks, cypress or plane trees and tiny gold-rosette stars where appropriate.\n\nSUBJECT: Zal remembers his strength but shows the weight of age: long ivory-white hair, a curved shoulder, a sword resting rather than raised.\n\nCOMPOSITION: The one luminous doorway is small flame before his hand, at the exact image centre. Stage this scene so the next painting can open through that real light. The brightest element is the specified small white-gold point at the exact centre of the uncropped source. Full-bleed landscape 3:2 final composition. Keep all principal faces, hands, weapons and source-required objects inside the central 27% of image width (x≈560–976 on a 1536px final), and away from the lower verse-panel area. Figures are small, flat Persian manuscript figures, never photoreal or larger than a fifth of frame height. The sides and top may hold secondary landscape only. Strictly no text, letters in any script, numerals, calligraphy, inscriptions, border, frame, margin, watermark or signature. No depiction of God, the Prophet or the Imams. No 3D render, photograph, fantasy poster, modern object or gore.\n\nZal, son of Sam, a human of unusually fair skin, dark almond eyes with white eyelashes, vermilion lips and a straight nose. His hair is pure ivory-white from birth, never blond, silver-grey or dark. At infant age he is a small unarmed baby with a soft tuft of white hair; at youth age he is tall and broad-shouldered with a narrow waist, no beard and long white hair falling below his arms. In the nest his clothing is only a simple ivory wrap; after Sam clothes him he wears an ivory tunic beneath a turquoise champion's coat with a narrow gold belt. No halo, wings, claws or animal features. A crown or weapon appears only when the source scene grants it. All figures remain small and flat at Persian manuscript scale.\n\nGenerate one image at the highest native resolution available. Do not add text or a border.\nFINAL COMPOSITION PRIORITY: A distant complete manuscript-page scene. Elder Zal is a small full-body figure no more than 20% of total image height, with his pure ivory-white hair, lined face, curved shoulder and resting sword all within x=43–57% of image width. Put his face above the eventual phone verse panel, y=38–43%, and his sword hand and lamp at x=50%, y=50%. No giant portrait or peripheral placement.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 1,
+    "notes": "Zal and resting sword visible in central crop"
+  },
+  {
+    "file": "04-pure-zal-2.png",
+    "prompt": "Create a NEW replacement for the father-and-son painting. Its previous version failed the real phone reader: Zal and Rostam were horizontally central, but the verse overlay hid both faces. Preserve the Timurid–Safavid Shahnameh miniature style, lapis night, opaque mineral pigments, shell gold, flat stacked space, tiny full-body figures and paper grain.\nSUBJECT: Elderly Zal with very long pure ivory-white hair and turquoise champion's coat points toward his son Rostam, a broad but unmistakable eight-year-old CHILD with black jaw-length hair, round beardless face, ivory tunic and short vermilion coat with turquoise hem. They stand together before a vacant horse stall, imagining a future mount. No horse yet.\nCOMPOSITION: Both complete heads and faces must sit HIGH ABOVE THE PHONE VERSE PANEL, at y=22–25% OF THE ENTIRE IMAGE. Zal face at x=46%, Rostam face at x=54%. Their pointing/receiving hands at y=32–35%, feet at y=42–45%. They are SMALL FULL-BODY FIGURES about 20% of image height, grouped inside x=43–57% width. One small white-gold lamp at x=50%, y=50% inside the empty stall, brighter than all else. Fill the lower half with architecture and ornament. Do not place a face or important hand at y=38–65%, where the phone's opaque verse card will cover it. No text, letters, numerals, inscription, frame, external border, signature, watermark, divine figure, modern object, gore, photograph, 3D render or fantasy poster. One image, highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Replacement positions Zal and Rostam faces above the phone verse card; approved after image review"
+  },
+  {
+    "file": "05-avaz-2.png",
+    "prompt": "Create a NEW replacement for the Iranian riders/father-and-son painting. The previous image failed phone review because the verse card obscured Zal and Rostam's faces. Keep the Timurid–Safavid manuscript miniature style, lapis night, mineral pigments, shell gold, flat space and fine brushwork.\nSUBJECT: Elderly Zal with very long pure ivory-white hair, lined face and turquoise champion's coat calls his eight-year-old son Rostam close. Rostam is a broad CHILD with round beardless face, jaw-length black hair, ivory tunic and vermilion short coat with turquoise hem. Tiny riders carry messages past the Zabul palace in the background.\nCOMPOSITION: Zal and Rostam stand as SMALL COMPLETE figures at the horizontal image centre. Zal's face x=46%, Rostam's face x=54%; BOTH FACES at y=22–25% OF THE WHOLE IMAGE, above the 390×844 phone verse overlay. Their hands of conversation at y=32–35%, feet at y=42–45%. Neither figure exceeds 20% of canvas height. A single small white-gold lamp at x=50%, y=50% is the strongest light below them. Peripheral riders only, no other foreground figure. Place no face or required action at y=38–65%, where the phone verse card covers the painting. Full-bleed 3:2 final crop from 4:3 source if needed; no text, letters, numerals, calligraphy, border, margin, signature, watermark, divine figures, modern objects, gore, photograph, 3D render or fantasy poster. Highest native resolution.",
+    "tool": "Nano Banana 2 in existing Google Gemini Chrome tab",
+    "source_format": "JPEG",
+    "source_size": [
+      2400,
+      1792
+    ],
+    "processing": "center crop to 2400×1600; Lanczos downsample to 1536×1024 PNG; repository AVIF conversion",
+    "attempts": 2,
+    "notes": "Replacement positions Zal and Rostam faces above the phone verse card; approved after image review"
+  }
+]
