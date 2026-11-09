@@ -264,9 +264,9 @@ The [original PDF](text/shahnameh-ferdowsi.pdf) is a reference for checking a li
 </details>
 
 <details>
-<summary>○ 09 · پادشاهی نوذر (0/12 sections)</summary>
+<summary>○ 09 · پادشاهی نوذر (1/12 sections)</summary>
 
-- [ ] 09.01 · پادشاهی نوذر
+- [x] [09.01 · پادشاهی نوذر](src/content/sections/09-01.ts)
 - [ ] 09.02 · نامه نوشتن نوذر به نزدیک سام
 - [ ] 09.03 · آگاهی یافتن پشنگ از مرگ منوچهر
 - [ ] 09.04 · آمدن افراسیاب به ایرانزمین

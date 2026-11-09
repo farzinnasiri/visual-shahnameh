@@ -1,0 +1,26 @@
+[
+  {
+    "file": "00-astaneh.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat/Tabriz school, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine brushwork, flat stacked perspective, no Western shading. Night palette: deep lapis-lazuli and ultramarine, glowing gold leaf, small vermilion accents, malachite and turquoise, ivory. Visible paper grain and slight gold craquelure. SUBJECT: An empty ivory throne and narrow turquoise royal diadem on a cushion remember Manuchehr after his death. A small suspended oil lamp glows over the throne in a lapis-night garden with gold chi clouds, cypresses and spongy rocks. No people, corpse or tomb. COMPOSITION: The white-gold hanging lamp flame is the brightest element at the image centre. The throne and diadem are small below it, still near the central axis. Outer garden is decorative. Full-bleed landscape 3:2. Strictly no text, letters, calligraphy, numerals, border, frame, margin or signature. No modern objects, no divine figure, no photorealism, no 3D.",
+    "attempts": 3,
+    "notes": "The first two candidates put the lamp too low. The third put it at the centre; accepted. Original 4:3 JPEG was centre-cropped and resized to 1536×1024 PNG before AVIF conversion."
+  },
+  {
+    "file": "01-takht.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat/Tabriz school, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine brushwork, flat stacked perspective, no Western shading. Night palette: deep lapis-lazuli and ultramarine, glowing gold leaf, small vermilion accents, malachite and turquoise, ivory. Visible paper grain and slight gold craquelure. SUBJECT: Nowzar, a young king with an oval face, short dark beard, indigo coat over ivory, turquoise sash and narrow turquoise royal diadem, sits on Manuchehr’s ivory throne and offers gold dinars to three small courtiers. COMPOSITION: Nowzar’s face and crown, open hand and shallow coin dish form a compact central group above the poem area. The gold dish near the centre is the luminous doorway. Broad lapis night and patterned garden surround them. Full-bleed landscape 3:2. Strictly no text, letters, calligraphy, numerals, border, frame, margin or signature. No modern objects, no divine figure, no photorealism, no 3D.",
+    "attempts": 3,
+    "notes": "Earlier candidates hid Nowzar beneath the phone verse panel or placed him too far right. A centred third composition was accepted. Original 4:3 JPEG was centre-cropped and resized to 1536×1024 PNG before AVIF conversion."
+  },
+  {
+    "file": "02-bidad.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style (Herat/Tabriz school, 15th–16th century), opaque mineral pigments and shell gold on burnished paper, fine brushwork, flat stacked perspective, no Western shading. Night palette: deep lapis-lazuli and ultramarine, glowing gold leaf, small vermilion accents, malachite and turquoise, ivory. Visible paper grain and slight gold craquelure. SUBJECT: In a dark palace chamber, the same young Nowzar with short beard, indigo coat, turquoise sash and narrow diadem clutches a closed gold purse while two elderly mobeds appeal to him with empty hands. He turns from them; there is no gift of coins. COMPOSITION: King, purse, counsellors’ faces and hands form one small group around the central window and fit the phone crop. The purse’s gold glint is the light target. The lower palace floor is dark and decorative. Full-bleed landscape 3:2. Strictly no text, letters, calligraphy, numerals, border, frame, margin or signature. No modern objects, no divine figure, no photorealism, no 3D.",
+    "attempts": 2,
+    "notes": "The first candidate repeated the coronation. A darker interior scene was accepted. Its light is subtler than the other scenes. Original 4:3 JPEG was centre-cropped and resized to 1536×1024 PNG before AVIF conversion."
+  },
+  {
+    "file": "03-payam-2.png",
+    "prompt": "Persian miniature painting, Timurid–Safavid manuscript style, shell gold and mineral pigments on burnished paper at night. A single royal courier faces front at the exact image centre and holds a sealed blank message in both hands. The white-gold seal is the central portal light. Nowzar in indigo and a narrow turquoise diadem stands immediately behind his left shoulder. Peasants and soldiers gather at the far left, a chestnut horse waits at right, and a road winds toward Mazandaran. Faces, hands and seal remain in the middle 10% width for phone zoom. Sam is absent. No text, writing, border, modern objects, divine figures, photography or 3D.",
+    "attempts": 3,
+    "notes": "Third composition accepted after phone sheet revealed the mounted courier and Nowzar were cropped. Browser original-size download failed to appear; copied image saved through Preview at 1024×765, centre-cropped and resized to 1536×1024."
+  }
+]
